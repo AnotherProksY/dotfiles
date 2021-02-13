@@ -1,0 +1,20 @@
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[user]
+	name = AnotherProksY
+	email = k.fazilov@icloud.com
+[core]
+	editor = vi
+[credential]
+	helper = osxkeychain
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[pull]
+	rebase = false
+[mergetool "vimdiff"]
+	path = vi

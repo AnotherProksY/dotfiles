@@ -1,0 +1,136 @@
+#!/bin/bash
+
+#
+# cd ~/bin
+# ln -s -f </path/to/tips_file>
+#
+
+
+# Shell tips
+function SHELL {
+  echo
+  echo 'How to prepend path to $PATH for fishshell:'
+  echo 'set PATH /usr/local/bin /usr/sbin $PATH'
+  echo
+  echo 'How to prepend path to $PATH for bash:'
+  echo 'export PATH=~/bin:$PATH'
+  echo
+  echo 'How to create ssh pair keys:'
+  echo 'Your machine => "A" (it can be a remote machine as well) ; Remote machine => "B" (it can be a local machine as well)'
+  echo '"ssh-keygen" command on machine A'
+  echo '"ssh-copy-id -i $HOME/.ssh/id_rsa.pub username@hostname" command on machine A'
+  echo 'Now try to connect to machine "B"'
+  echo 'Thats it !'
+  echo
+  echo "---------------------------------------"
+}
+
+# UNIX permissions
+function PERMISSIONS {
+  echo
+  echo 'chmod short hand cheat sheet:'
+  echo
+  echo 'Each selected option equal 1, each deleted option equal 0'
+  echo '"rwx rwx rwx" --> user group global'
+  echo '"rwx r-- ---" --> "111 100 000" --> "chmod 740"'
+  echo
+  echo '"000" --> "0"'
+  echo '"001" --> "1"'
+  echo '"010" --> "2"'
+  echo '"011" --> "3"'
+  echo '"100" --> "4"'
+  echo '"101" --> "5"'
+  echo '"110" --> "6"'
+  echo '"111" --> "7"'
+  echo
+  echo "---------------------------------------"
+}
+
+# GIT init repo tips
+function GITINIT {
+  echo ""
+  echo "New GIT repo creation process:"
+  echo ""
+  echo "1. Init new local repo"
+  echo "git init"
+  echo ""
+  echo "2. Add files"
+  echo "git add ."
+  echo ""
+  echo "3. Commit the files"
+  echo "git commit"
+  echo ""
+  echo "4. At the top of your GitHub repository's Quick Setup page, click to copy the remote repository URL."
+  echo "https://github.com/AnotherProksy/<project_name>"
+  echo ""
+  echo "5. Add the URL for the remote repo"
+  echo "git remote add origin <remote_repository_URL>"
+  echo ""
+  echo "6. Push the changes"
+  echo "git push -u origin master"
+  echo ""
+  echo "-------------------------------------------------"
+}
+
+# GIT flow tips
+function GITFLOW {
+  echo ""
+  echo "GIT flow:"
+  echo "https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches"
+  echo ""
+  echo "How to add new branch and switch in this branch:"
+  echo "git checkout -b [name_of_your_new_branch]"
+  echo ""
+  echo "Push the branch on github:"
+  echo "git push origin [name_of_your_new_branch]"
+  echo ""
+  echo "Add a new remote for your branch:"
+  echo "git remote add [name_of_your_remote] [name_of_your_new_branch]"
+  echo ""
+  echo "Push changes from your commit into your branch:"
+  echo "git push [name_of_your_new_remote] [url]"
+  echo ""
+  echo "Update your branch when the original branch from official repository has been updated:"
+  echo "git fetch [name_of_your_remote]"
+  echo ""
+  echo "Delete a branch on your local filesystem:"
+  echo "git branch -d [name_of_your_new_branch]"
+  echo ""
+  echo "Delete the branch on github:"
+  echo "git push origin :[name_of_your_new_branch]"
+  echo ""
+  echo "-------------------------------------------------"
+}
+
+
+echo "---------------------------------------"
+
+if [ $# -eq 0 ]
+then
+  SHELL
+  PERMISSIONS
+  GITINIT
+  GITFLOW
+  exit 1
+else
+  for arg in "$@"
+  do
+    if [ "$arg" == "shell" ]
+    then
+      SHELL
+      exit 1
+    elif [ "$arg" == "chmod" ] || [ "$arg" == "permissions" ] || [ "$arg" == "perms" ]
+    then
+      PERMISSIONS
+      exit 1
+    elif [ "$arg" == "git" ] || [ "$arg" == "init" ]
+    then
+      GITINIT
+      exit 1
+    elif [ "$arg" == "git" ] || [ "$arg" == "flow" ]
+    then
+      GITFLOW
+      exit 1
+    fi
+  done
+fi
