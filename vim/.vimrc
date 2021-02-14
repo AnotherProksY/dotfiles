@@ -32,6 +32,7 @@ set nobackup
 set nowb
 set noswapfile
 filetype plugin on
+filetype indent on
 
 " Colors
 set rtp+=~/.config/vim/gruvbox/
