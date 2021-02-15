@@ -22,6 +22,7 @@ zstyle ':completion:*' menu select
 bindkey '^[[Z' reverse-menu-complete
 
 # Aliases
+alias p='pass'
 alias dev='cd /Users/kamilfazilov/Dev;ls'
 alias ls='ls -GF'
 alias o='open .'
