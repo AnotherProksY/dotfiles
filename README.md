@@ -8,11 +8,12 @@
 CLI утилиты
 ```bash
 brew tap beeftornado/rmtree
-brew install tree git htop macvim tmux ctags fzf bat telnet node pyenv httpie pass
+brew tap simplydanny/pass-extensions
+brew install tree git htop macvim tmux ctags fzf bat telnet node pyenv httpie pass pass-update
 /usr/local/opt/fzf/install
 ```
 
 Casks
 ```bash
-brew cask install clipy tableplus telegram the-unarchiver appcleaner bitwarden protonvpn discord spotify visual-studio-code notion
+brew cask install clipy tableplus telegram the-unarchiver appcleaner protonvpn discord spotify visual-studio-code notion
 ```
