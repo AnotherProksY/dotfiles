@@ -8,7 +8,7 @@
 CLI утилиты
 ```bash
 brew tap beeftornado/rmtree
-brew install tree git htop macvim tmux ctags fzf bat telnet node pyenv httpie
+brew install tree git htop macvim tmux ctags fzf bat telnet node pyenv httpie pass
 /usr/local/opt/fzf/install
 ```
 
