@@ -9,6 +9,7 @@ export PATH=~/bin:$PATH
 export EDITOR=vim
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+export PASSWORD_STORE_ENABLE_EXTENSIONS=true
 
 eval "$(pyenv init -)"
 
