@@ -9,12 +9,11 @@ CLI утилиты
 ```bash
 brew tap beeftornado/rmtree
 brew tap simplydanny/pass-extensions
-brew install --casks adur1990/tap/passformacos
 brew install tree git htop macvim tmux ctags fzf bat telnet node pyenv httpie pass pass-update mosh
 /usr/local/opt/fzf/install
 ```
 
 Casks
 ```bash
-brew cask install clipy tableplus telegram appcleaner discord spotify visual-studio-code notion tunnelblick
+brew cask install clipy tableplus telegram appcleaner discord spotify visual-studio-code notion tunnelblick adur1990/tap/passformacos
 ```
