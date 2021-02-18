@@ -6,6 +6,7 @@ export PROMPT="%F{green}● %~ %F{normal}$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 export PATH=~/bin:$PATH
+export FPATH=/opt/homebrew/share/zsh/site-functions:$FPATH
 export EDITOR=vim
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -14,7 +15,7 @@ export PASSWORD_STORE_ENABLE_EXTENSIONS=true
 eval "$(pyenv init -)"
 
 # Completions
-autoload -U compinit && compinit
+autoload -Uz compinit && compinit
 zmodload -i zsh/complist
 zstyle ':completion:*' menu select
 
@@ -23,7 +24,7 @@ bindkey '^[[Z' reverse-menu-complete
 
 # Aliases
 alias p='pass'
-alias dev='cd /Users/kamilfazilov/Dev;ls'
+alias dev='cd /Users/k.fazilov/Dev;ls'
 alias ls='ls -GF'
 alias o='open .'
 alias rm='rm -f'
@@ -51,3 +52,14 @@ alias untar='echo "tar -xf"'
 
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# The following lines were added by compinstall
+zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
+zstyle ':completion:*' expand prefix suffix
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' list-suffixes true
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*' special-dirs true
+zstyle :compinstall filename '/Users/k.fazilov/.zshrc'
+
