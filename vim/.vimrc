@@ -1,3 +1,5 @@
+set runtimepath+=~/.config/vim
+
 " Mappings
 map <C-f> :exec ":args `grep -Rl ".input("Grep flags: ")." '".input("Grep word: ")."' *` <bar> tab all"<CR>
 map <silent> <C-y> "+y<CR>
@@ -35,6 +37,5 @@ filetype plugin on
 filetype indent on
 
 " Colors
-set rtp+=~/.config/vim/gruvbox/
 colorscheme gruvbox
 set background=dark
