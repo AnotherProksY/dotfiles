@@ -9,7 +9,7 @@ CLI утилиты
 ```bash
 brew tap beeftornado/rmtree
 brew tap simplydanny/pass-extensions
-brew install tree git htop macvim tmux ctags fzf bat telnet node pyenv httpie pass pass-update mosh pinentry-mac
+brew install tree git htop vim tmux ctags fzf bat telnet node pyenv httpie pass pass-update mosh pinentry-mac
 /usr/local/opt/fzf/install
 ```
 
