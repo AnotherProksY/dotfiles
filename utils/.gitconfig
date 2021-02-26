@@ -4,7 +4,7 @@
 	required = true
 	clean = git-lfs clean -- %f
 [user]
-	name = AnotherProksY
+    name = Fazilov Kamil
 	email = k.fazilov@icloud.com
 [core]
 	editor = vi
@@ -18,3 +18,5 @@
 	rebase = false
 [mergetool "vimdiff"]
 	path = vi
+[init]
+    defaultBranch = master
