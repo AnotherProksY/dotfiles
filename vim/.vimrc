@@ -1,8 +1,9 @@
 set runtimepath+=~/.config/vim
 
 " Mappings
-map <C-f> :exec ":args `grep -Rl ".input("Grep flags: ")." '".input("Grep word: ")."' *` <bar> tab all"<CR>
 map <silent> <C-y> "+y<CR>
+vnoremap < <gv " Shift+> keys
+vnoremap > >gv " Shift+< keys
 
 " Standard settings
 syntax on
