@@ -37,6 +37,11 @@ set noswapfile
 filetype plugin on
 filetype indent on
 
+" GUI
+set guifont=Monaco:h16
+set guioptions=
+set antialias
+
 " Colors
 colorscheme gruvbox
 set background=dark
