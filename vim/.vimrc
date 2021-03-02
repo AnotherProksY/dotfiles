@@ -1,4 +1,4 @@
-set runtimepath+=~/.config/vim
+set rtp+=~/.config/vim
 
 " Mappings
 map <silent> <C-y> "+y<CR>
