@@ -7,9 +7,11 @@
 
 CLI утилиты
 ```bash
+# Удаление утилит вместе с ее зависимостями
 brew tap beeftornado/rmtree
+
 brew tap simplydanny/pass-extensions
-brew install tree git htop vim tmux ctags fzf bat telnet node httpie pass pass-update mosh pinentry-mac
+brew install tree git htop vim tmux ctags fzf bat telnet httpie pass pass-update mosh pinentry-mac
 /usr/local/opt/fzf/install
 ```
 
@@ -22,4 +24,21 @@ Pyenv
 ```bash
 curl https://pyenv.run | bash
 exec $SHELL
+```
+
+Sudo TouchID for TMUX
+```bash
+# Нужный "pam" файл:
+brew install fabianishere/personal/pam_reattach
+
+# Заходим в рута и редактируем "pam" для sudo
+sudo su -
+vim /etc/pam.d/sudo
+
+# Добавляем эти две строчки (важно соблюдать порядок строк):
+auth     optional     /opt/homebrew/lib/pam/pam_reattach.so
+auth     sufficient   pam_tid.so
+
+# Сделать "wq!" внутри Vim
+# Перезайти в терминал (удалить tmux сессию + перезапустить Terminal.app)
 ```
