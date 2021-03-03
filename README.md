@@ -17,7 +17,7 @@ brew install tree git htop vim tmux ctags fzf bat telnet httpie pass pass-update
 
 Casks
 ```bash
-brew cask install clipy tableplus telegram appcleaner discord spotify visual-studio-code notion tunnelblick adur1990/tap/passformacos macvim
+brew cask install clipy tableplus telegram appcleaner discord spotify visual-studio-code notion tunnelblick adur1990/tap/passformacos macvim gpg-suite
 ```
 
 Pyenv
