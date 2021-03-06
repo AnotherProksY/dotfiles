@@ -36,6 +36,7 @@ set nowb
 set noswapfile
 filetype plugin on
 filetype indent on
+au BufNewFile,BufRead /private/**/gopass** setlocal noswapfile nobackup noundofile
 
 " GUI
 set guifont=Monaco:h16

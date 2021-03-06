@@ -11,7 +11,7 @@ CLI утилиты
 brew tap beeftornado/rmtree
 
 brew tap simplydanny/pass-extensions
-brew install tree git htop vim tmux ctags fzf bat telnet httpie pass pass-update mosh pinentry-mac
+brew install tree git htop vim tmux ctags fzf bat telnet httpie pass pass-update mosh pinentry-mac gopass
 /usr/local/opt/fzf/install
 ```
 
