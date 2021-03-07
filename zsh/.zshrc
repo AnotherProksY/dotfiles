@@ -5,7 +5,7 @@ export RPROMPT=$'$(__git_ps1 "%s")'
 export PROMPT="%F{green}● %~ %F{normal}$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
-export PATH=~/bin:$PATH
+export PATH=~/bin:/opt/homebrew/bin:~/.pyenv/bin:$PATH
 export FPATH=/opt/homebrew/share/zsh/site-functions:$FPATH
 export EDITOR=vim
 export LC_ALL=en_US.UTF-8
@@ -13,6 +13,7 @@ export LANG=en_US.UTF-8
 export PASSWORD_STORE_ENABLE_EXTENSIONS=true
 
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # Completions
 autoload -Uz compinit && compinit
@@ -63,3 +64,4 @@ zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower
 zstyle ':completion:*' special-dirs true
 zstyle :compinstall filename '/Users/k.fazilov/.zshrc'
 
+# End of lines added by compinstall
