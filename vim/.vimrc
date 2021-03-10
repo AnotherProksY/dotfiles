@@ -5,6 +5,13 @@ map <silent> <C-y> "+y<CR>
 vnoremap < <gv " Shift+> keys
 vnoremap > >gv " Shift+< keys
 
+if has('gui_running')
+    nmap <C-h> <C-w>h
+    nmap <C-j> <C-w>j
+    nmap <C-k> <C-w>k
+    nmap <C-l> <C-w>l
+endif
+
 " Standard settings
 syntax on
 set number
