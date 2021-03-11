@@ -49,6 +49,7 @@ au BufNewFile,BufRead /private/**/pass** setlocal noundofile
 set guifont=Monaco:h16
 set guioptions=
 set antialias
+let g:netrw_banner=0
 
 " Colors
 colorscheme gruvbox
