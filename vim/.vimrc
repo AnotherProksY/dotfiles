@@ -37,6 +37,7 @@ set noswapfile
 filetype plugin on
 filetype indent on
 au BufNewFile,BufRead /private/**/pass** setlocal noundofile
+let g:netrw_banner=0
 
 " Colors
 colorscheme gruvbox
