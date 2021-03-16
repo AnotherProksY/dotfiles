@@ -4,6 +4,7 @@ set rtp+=~/.config/vim
 map <silent> <C-y> "+y<CR>
 vnoremap < <gv " Shift+> keys
 vnoremap > >gv " Shift+< keys
+command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
 " Standard settings
 syntax on
@@ -14,6 +15,9 @@ set expandtab
 set ai
 set si
 set showmatch
+set so=7
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l
 
 " Autocomplete
 set shortmess+=c   " Shut off completion messages
@@ -23,6 +27,10 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+set wildmenu
+set wildignore=*.o,*~,*.pyc
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
+set lazyredraw
 
 " Other
 set autochdir
