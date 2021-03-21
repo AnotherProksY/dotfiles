@@ -1,5 +1,14 @@
 set rtp+=~/.config/vim
 
+if has("gui_running")
+    call plug#begin('~/.config/vim/plugged')
+    Plug 'AnotherProksY/ez-window'
+    Plug 'tpope/vim-fugitive'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'morhetz/gruvbox'
+    call plug#end()
+endif
+
 " Mappings
 map <silent> <C-y> "+y<CR>
 vnoremap < <gv " Shift+> keys
@@ -46,7 +55,4 @@ filetype plugin on
 filetype indent on
 au BufNewFile,BufRead /private/**/pass** setlocal noundofile
 let g:netrw_banner=0
-
-" Colors
-colorscheme gruvbox
-set background=dark
+hi Comment ctermfg=green

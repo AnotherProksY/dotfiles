@@ -1,6 +1,10 @@
-set rtp+=~/.config/vim/ez-window
-set guifont=Monaco:h16
+set guifont=Menlo:h16
 set guioptions=
 set antialias
-let ayucolor="light"
-colorscheme ayu
+let g:gruvbox_contrast_dark='soft'
+let g:gruvbox_sign_column='bg0'
+let g:gruvbox_color_column='bg0'
+set updatetime=100
+set signcolumn=yes
+colorscheme gruvbox
+set background=dark
