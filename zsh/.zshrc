@@ -2,7 +2,7 @@
 setopt prompt_subst
 . ~/git-prompt.sh
 export RPROMPT=$'$(__git_ps1 "%s")'
-export PROMPT="%F{green}🍙 %~ %F{normal}$ "
+export PROMPT="%F{green}%~ %F{normal}$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 export PATH=~/bin:/opt/homebrew/bin:~/.pyenv/bin:$PATH

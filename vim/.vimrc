@@ -24,7 +24,6 @@ set expandtab
 set ai
 set si
 set showmatch
-set so=7
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
