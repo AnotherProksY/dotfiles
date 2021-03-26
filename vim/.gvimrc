@@ -1,10 +1,8 @@
 set guifont=Menlo:h16
 set guioptions=
 set antialias
-let g:gruvbox_contrast_dark='soft'
-let g:gruvbox_sign_column='bg0'
-let g:gruvbox_color_column='bg0'
-set updatetime=100
-set signcolumn=yes
-colorscheme gruvbox
-set background=dark
+let g:spacegray_low_contrast = 1
+let g:spacegray_use_italics = 1
+let g:spacegray_use_italics = 1
+colorscheme spacegray
+highlight clear LineNr

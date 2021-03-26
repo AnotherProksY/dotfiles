@@ -4,12 +4,11 @@ set nocompatible
 set rtp+=~/.config/vim
 
 if has("gui_running")
-  call plug#begin('~/.config/vim/plugged')
-  Plug 'AnotherProksY/ez-window'
-  Plug 'tpope/vim-fugitive'
-  Plug 'airblade/vim-gitgutter'
-  Plug 'morhetz/gruvbox'
-  call plug#end()
+    call plug#begin('~/.config/vim/plugged')
+    Plug 'AnotherProksY/ez-window'
+    Plug 'tpope/vim-fugitive'
+    Plug 'ackyshake/Spacegray.vim'
+    call plug#end()
 endif
 
 " Mappings
@@ -65,4 +64,5 @@ filetype indent on
 au BufNewFile,BufRead /private/**/pass** setlocal noundofile
 
 " Colors
+colorscheme peachpuff
 hi Comment ctermfg=green
