@@ -3,8 +3,6 @@ set nocompatible
 
 " Mappings
 map <silent> <C-y> "+y<CR>
-vnoremap < <gv " Shift+> keys
-vnoremap > >gv " Shift+< keys
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 command! MakeTags !ctags -R .
 
@@ -44,9 +42,6 @@ set nobackup
 set nowb
 set noswapfile
 set path+=**
-
-" Built-in plugins
-let g:netrw_banner=0
 
 " Filetype
 filetype plugin on
