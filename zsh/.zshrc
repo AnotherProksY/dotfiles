@@ -1,7 +1,4 @@
 # Exports
-setopt prompt_subst
-. ~/git-prompt.sh
-export RPROMPT=$'$(__git_ps1 "%s")'
 export PROMPT="%F{green}%~ %F{normal}$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
@@ -19,6 +16,14 @@ eval "$(pyenv virtualenv-init -)"
 autoload -Uz compinit && compinit
 zmodload -i zsh/complist
 zstyle ':completion:*' menu select
+zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
+zstyle ':completion:*' expand prefix suffix
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' list-suffixes true
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*' special-dirs true
+zstyle :compinstall filename '/Users/k.fazilov/.zshrc'
 
 # Shift-Tab
 bindkey '^[[Z' reverse-menu-complete
@@ -53,15 +58,3 @@ alias untar='echo "tar -xf"'
 
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# The following lines were added by compinstall
-zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
-zstyle ':completion:*' expand prefix suffix
-zstyle ':completion:*' group-name ''
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*' list-suffixes true
-zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-zstyle ':completion:*' special-dirs true
-zstyle :compinstall filename '/Users/k.fazilov/.zshrc'
-
-# End of lines added by compinstall
