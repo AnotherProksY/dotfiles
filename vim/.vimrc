@@ -1,16 +1,6 @@
 " No VI support!
 set nocompatible
 
-set rtp+=~/.config/vim
-
-if has("gui_running")
-    call plug#begin('~/.config/vim/plugged')
-    Plug 'AnotherProksY/ez-window'
-    Plug 'tpope/vim-fugitive'
-    Plug 'ackyshake/Spacegray.vim'
-    call plug#end()
-endif
-
 " Mappings
 map <silent> <C-y> "+y<CR>
 vnoremap < <gv " Shift+> keys
