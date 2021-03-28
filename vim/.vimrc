@@ -38,9 +38,6 @@ set ttyfast
 set lazyredraw
 set ruler
 set autoread
-set nobackup
-set nowb
-set noswapfile
 set path+=**
 
 " Filetype
