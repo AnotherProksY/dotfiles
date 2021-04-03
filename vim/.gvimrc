@@ -8,6 +8,5 @@ call plug#end()
 set guifont=Menlo:h16
 set guioptions=
 set antialias
-let g:gruvbox_contrast_dark='soft'
 colorscheme gruvbox
 set background=dark
