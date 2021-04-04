@@ -1,22 +1,25 @@
 [filter "lfs"]
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
 [user]
-    name = Fazilov Kamil
-	email = k.fazilov@icloud.com
+  name = Fazilov Kamil
+  email = k.fazilov@icloud.com
+  signingKey = E2B09B23
 [core]
-	editor = vi
+  editor = vi
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 [diff]
-	tool = vimdiff
+  tool = vimdiff
 [merge]
-	tool = vimdiff
+  tool = vimdiff
 [pull]
-	rebase = false
+  rebase = false
 [mergetool "vimdiff"]
-	path = vi
+  path = vi
 [init]
-    defaultBranch = master
+  defaultBranch = main
+[gpg]
+  program = /opt/homebrew/bin/gpg
