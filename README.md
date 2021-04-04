@@ -11,13 +11,13 @@ CLI утилиты
 brew tap beeftornado/rmtree
 
 brew tap simplydanny/pass-extensions
-brew install tree git htop tmux ctags fzf bat telnet httpie pass pass-update mosh pinentry-mac gnupg macvim
+brew install tree git htop tmux ctags fzf bat telnet httpie pass pass-update mosh pinentry-mac gnupg vim
 /usr/local/opt/fzf/install
 ```
 
 Casks
 ```bash
-brew cask install clipy tableplus telegram appcleaner discord spotify visual-studio-code notion tunnelblick adur1990/tap/passformacos macvim gpg-suite mos
+brew cask install clipy tableplus telegram appcleaner discord spotify visual-studio-code notion tunnelblick adur1990/tap/passformacos gpg-suite
 ```
 
 Pyenv
