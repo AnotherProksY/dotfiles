@@ -22,7 +22,6 @@ set whichwrap+=<,>,h,l
 set shortmess+=c   " Shut off completion messages
 
 " Search
-set hlsearch
 set incsearch
 set ignorecase
 set smartcase
