@@ -38,6 +38,7 @@ set lazyredraw
 set ruler
 set autoread
 set path+=**
+set t_Co=256
 
 " Filetype
 filetype plugin on
@@ -45,5 +46,4 @@ filetype indent on
 au BufNewFile,BufRead /private/**/pass** setlocal noundofile
 
 " Colors
-colorscheme peachpuff
-hi Comment ctermfg=green
+hi Comment ctermfg=34
