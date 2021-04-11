@@ -2,7 +2,7 @@
 export PROMPT="%F{green}%~ %F{normal}$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
-export PATH=~/bin:/opt/homebrew/bin:~/.pyenv/bin:$PATH
+export PATH=~/bin:/opt/homebrew/bin:/opt/homebrew/sbin:~/.pyenv/bin:$PATH
 export FPATH=/opt/homebrew/share/zsh/site-functions:$FPATH
 export EDITOR=vim
 export LC_ALL=en_US.UTF-8
