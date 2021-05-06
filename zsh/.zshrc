@@ -1,4 +1,5 @@
 # Exports
+unset RPROMPT
 export PROMPT="%F{green}%~ %F{normal}$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
