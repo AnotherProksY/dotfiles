@@ -11,13 +11,13 @@ CLI утилиты
 brew tap beeftornado/rmtree
 
 brew tap simplydanny/pass-extensions
-brew install tree git htop tmux ctags fzf bat telnet httpie pass pass-update mosh pinentry-mac gnupg vim docker
+brew install tree git htop tmux ctags fzf bat telnet httpie pass pass-update mosh pinentry-mac gnupg vim
 /usr/local/opt/fzf/install
 ```
 
 Casks
 ```bash
-brew cask install clipy tableplus telegram appcleaner discord spotify visual-studio-code notion tunnelblick adur1990/tap/passformacos gpg-suite mouse-fix docker skype microsoft-remote-desktop anydesk vlc lens
+brew cask install clipy tableplus telegram appcleaner discord spotify visual-studio-code tunnelblick gpg-suite docker skype microsoft-remote-desktop lens
 ```
 
 Pyenv
