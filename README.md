@@ -17,7 +17,7 @@ brew install tree git htop tmux ctags fzf bat telnet httpie pass pass-update mos
 
 Casks
 ```bash
-brew cask install clipy tableplus telegram appcleaner discord spotify visual-studio-code tunnelblick gpg-suite docker skype microsoft-remote-desktop lens
+brew cask install clipy tableplus telegram appcleaner discord spotify visual-studio-code tunnelblick gpg-suite docker skype microsoft-remote-desktop lens typora
 ```
 
 Pyenv
