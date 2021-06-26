@@ -1,11 +1,13 @@
 # Установка Homebrew
 
-В терминале
+## В терминале
+
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-CLI утилиты
+## CLI утилиты
+
 ```bash
 # Удаление утилит вместе с ее зависимостями
 brew tap beeftornado/rmtree
@@ -15,18 +17,21 @@ brew install tree git htop tmux ctags fzf bat telnet httpie pass pass-update mos
 /usr/local/opt/fzf/install
 ```
 
-Casks
+## Casks
+
 ```bash
-brew cask install clipy tableplus telegram appcleaner discord spotify visual-studio-code tunnelblick gpg-suite docker skype microsoft-remote-desktop lens typora
+brew cask install clipy tableplus telegram appcleaner discord spotify visual-studio-code tunnelblick gpg-suite docker skype microsoft-remote-desktop lens obsidian
 ```
 
-Pyenv
+## Pyenv
+
 ```bash
 curl https://pyenv.run | bash
 exec $SHELL
 ```
 
-Sudo TouchID for TMUX
+## Sudo TouchID for TMUX
+
 ```bash
 # Нужный "pam" файл:
 brew install fabianishere/personal/pam_reattach
