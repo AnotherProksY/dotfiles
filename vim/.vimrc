@@ -5,6 +5,8 @@ set nocompatible
 map <silent> <C-y> "+y<CR>
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 command! MakeTags !ctags -R .
+noremap <F12> <Esc>:syntax sync fromstart<CR>
+inoremap <F12> <C-o>:syntax sync fromstart<CR>
 
 " Standard settings
 syntax on
