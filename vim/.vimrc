@@ -19,6 +19,10 @@ set si
 set showmatch
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
+set autoindent
+set smartindent
+set breakindent
+set breakindentopt=shift:2,min:40,sbr
 
 " Autocomplete
 set shortmess+=c   " Shut off completion messages
