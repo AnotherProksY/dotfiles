@@ -1,6 +1,10 @@
 " No VI support!
 set nocompatible
 
+call plug#begin('~/.vim/plugged')
+Plug 'rizzatti/dash.vim'
+call plug#end()
+
 " Mappings
 map <silent> <C-y> "+y<CR>
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
