@@ -3,6 +3,7 @@ set nocompatible
 
 call plug#begin('~/.vim/plugged')
 Plug 'rizzatti/dash.vim'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " Mappings
