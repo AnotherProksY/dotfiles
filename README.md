@@ -11,9 +11,10 @@
 ```bash
 # Удаление утилит вместе с ее зависимостями
 brew tap beeftornado/rmtree
+brew tap heroku/brew
 
 brew tap simplydanny/pass-extensions
-brew install tree git htop tmux ctags fzf bat telnet httpie pass pass-update mosh pinentry-mac gnupg vim nmap
+brew install tree git htop tmux ctags fzf bat telnet httpie pass pass-update mosh pinentry-mac gnupg vim nmap heroku
 /usr/local/opt/fzf/install
 ```
 
