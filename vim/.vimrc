@@ -1,10 +1,14 @@
 " No VI support!
 set nocompatible
 
-call plug#begin('~/.vim/plugged')
-Plug 'rizzatti/dash.vim'
-Plug 'tpope/vim-fugitive'
-call plug#end()
+if has("gui_running")
+  call plug#begin('~/.vim/plugged')
+  Plug 'ayu-theme/ayu-vim'
+  Plug 'tpope/vim-fugitive'
+  Plug 'AnotherProksY/ez-window'
+  Plug 'preservim/tagbar'
+  call plug#end()
+endif
 
 " Mappings
 map <silent> <C-y> "+y<CR>
