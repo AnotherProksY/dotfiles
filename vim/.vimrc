@@ -13,7 +13,7 @@ endif
 " Mappings
 map <silent> <C-y> "+y<CR>
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
-command! MakeTags !ctags -R .
+command! MakeTags !/opt/homebrew/bin/ctags -R .
 noremap <F6> <Esc>:syntax sync fromstart<CR>
 inoremap <F6> <C-o>:syntax sync fromstart<CR>
 

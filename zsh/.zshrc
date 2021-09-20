@@ -41,7 +41,7 @@ alias grep='grep --color=always'
 alias genpass='openssl rand -base64 16'
 alias fzf='fzf --preview "([[ -f {} ]] && (bat --style=numbers --color=always {} || cat {})) || ([[ -d {} ]] && (tree -C {} | less)) || echo {} 2> /dev/null | head -200"'
 
-#Git aliases
+# Git aliases
 alias gita='git add .'
 alias gitc='git commit'
 alias gitps='git push'
@@ -53,9 +53,12 @@ alias giff='git diff HEAD^ HEAD'
 alias gip='git remote prune origin'
 alias gir='git reset --soft HEAD~1'
 
-#Abbrs
+# Abbrs
 alias newtar='echo "tar -czf"'
 alias untar='echo "tar -xf"'
 
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# heroku autocomplete setup
+HEROKU_AC_ZSH_SETUP_PATH=/Users/k.fazilov/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
