@@ -14,7 +14,7 @@ brew tap beeftornado/rmtree
 brew tap heroku/brew
 
 brew tap simplydanny/pass-extensions
-brew install tree git htop tmux ctags fzf bat telnet httpie pass pass-update mosh pinentry-mac gnupg vim nmap heroku
+brew install tree git htop tmux ctags fzf bat telnet httpie mosh pinentry-mac gnupg vim nmap heroku
 /usr/local/opt/fzf/install
 ```
 
