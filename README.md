@@ -11,17 +11,16 @@
 ```bash
 # Удаление утилит вместе с ее зависимостями
 brew tap beeftornado/rmtree
-brew tap heroku/brew
 
 brew tap simplydanny/pass-extensions
-brew install tree git htop tmux ctags fzf bat telnet httpie mosh pinentry-mac gnupg vim nmap heroku
+brew install tree git htop tmux ctags fzf bat telnet httpie mosh pinentry-mac gnupg vim nmap
 /usr/local/opt/fzf/install
 ```
 
 ## Casks
 
 ```bash
-brew cask install clipy tableplus telegram appcleaner discord tunnelblick gpg-suite docker skype microsoft-remote-desktop macvim whatsapp drawio anydesk typora
+brew cask install clipy tableplus telegram appcleaner discord gpg-suite docker skype microsoft-remote-desktop macvim whatsapp drawio anydesk typora protonvpn
 ```
 
 ## Pyenv
