@@ -3,9 +3,7 @@ set nocompatible
 
 if has("gui_running")
   call plug#begin('~/.vim/plugged')
-  Plug 'ayu-theme/ayu-vim'
   Plug 'morhetz/gruvbox'
-  Plug 'tpope/vim-fugitive'
   Plug 'AnotherProksY/ez-window'
   Plug 'preservim/tagbar'
   call plug#end()

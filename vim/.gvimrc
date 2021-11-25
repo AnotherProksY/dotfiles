@@ -4,8 +4,9 @@ set guioptions=
 set antialias
 set termguicolors
 
-let ayucolor="light"
-colorscheme ayu
+" let ayucolor="light"
+colorscheme gruvbox
+set background=dark
 
 
 " TagBar settings

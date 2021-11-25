@@ -9,10 +9,13 @@
   signingKey = E2B09B23
 [core]
   editor = vi
+	excludesfile = /Users/k.fazilov/.gitignore_global
 [credential]
   helper = osxkeychain
 [diff]
   tool = vimdiff
+[difftool]
+	prompt = false
 [merge]
   tool = vimdiff
 [pull]
@@ -23,3 +26,9 @@
   defaultBranch = main
 [gpg]
   program = /opt/homebrew/bin/gpg
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
