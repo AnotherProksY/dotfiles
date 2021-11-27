@@ -60,4 +60,5 @@ filetype indent on
 au BufNewFile,BufRead /private/**/pass** setlocal noundofile
 
 " Colors
+colorscheme default
 hi Comment ctermfg=34
