@@ -17,7 +17,7 @@ set autochdir
 set wrap
 set linebreak
 set ruler
-set mouse=n
+set mouse=nv
 
 filetype plugin on
 filetype indent on
