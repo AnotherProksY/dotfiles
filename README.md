@@ -12,7 +12,6 @@
 # Удаление утилит вместе с ее зависимостями
 brew tap beeftornado/rmtree
 
-brew tap simplydanny/pass-extensions
 brew install tree git htop tmux ctags fzf bat telnet httpie mosh pinentry-mac gnupg vim nmap
 /usr/local/opt/fzf/install
 ```
