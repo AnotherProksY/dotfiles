@@ -19,7 +19,7 @@ brew install tree git htop tmux ctags fzf bat telnet httpie mosh pinentry-mac gn
 ## Casks
 
 ```bash
-brew cask install tableplus telegram appcleaner discord docker skype whatsapp protonvpn boop maccy numi qlmarkdown zoom drawio
+brew cask install tableplus telegram appcleaner discord docker skype whatsapp protonvpn boop maccy numi qlmarkdown zoom drawio notion
 ```
 
 ## Pyenv
