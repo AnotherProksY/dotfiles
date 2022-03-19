@@ -10,15 +10,20 @@ map <C-k> :cp<CR>
 
 " Settings
 syntax on
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set smarttab
+set shiftwidth=4
 set expandtab
-set ai
+set autoindent
 set number
 set hlsearch
+set ignorecase
+set incsearch
+set smartcase
 set autochdir
 set wrap
 set linebreak
+set breakindent
 set ruler
 set mouse=nv
 
