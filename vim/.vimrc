@@ -26,6 +26,7 @@ set linebreak
 set breakindent
 set ruler
 set mouse=nv
+set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
 
 filetype plugin on
 filetype indent on
