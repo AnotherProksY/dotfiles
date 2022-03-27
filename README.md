@@ -1,26 +1,37 @@
-# Установка Homebrew
+# Мои настройки
 
-## В терминале
+## Homebrew
+
+Установка:
 
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-## CLI утилиты
+Formula:
 
 ```bash
 # Удаление утилит вместе с ее зависимостями
 brew tap beeftornado/rmtree
 
-brew install tree git htop tmux ctags fzf bat telnet httpie mosh pinentry-mac gnupg vim nmap
+brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh pinentry-mac gnupg vim nmap
 /usr/local/opt/fzf/install
 ```
 
-## Casks
+Casks:
 
 ```bash
-brew cask install tableplus telegram appcleaner discord docker skype whatsapp protonvpn boop maccy numi qlmarkdown zoom drawio notion sublime-text sublime-merge
+brew install --casks tableplus telegram appcleaner discord docker skype whatsapp protonvpn boop maccy numi qlmarkdown zoom notion
 ```
+
+## Другие программы
+
+1. [Microsoft Excel](https://apps.apple.com/ru/app/microsoft-excel/id462058435?l=en&mt=12)
+2. [Microsoft Word](https://apps.apple.com/ru/app/microsoft-word/id462054704?l=en&mt=12)
+3. [XCode](https://apps.apple.com/ru/app/xcode/id497799835?l=en&mt=12)
+4. [DaisyDisk](https://apps.apple.com/ru/app/daisydisk/id411643860?l=en&mt=12)
+5. [The Unarchiver](https://apps.apple.com/ru/app/the-unarchiver/id425424353?mt=12)
+6. [Aseprite](https://www.aseprite.org)
 
 ## Pyenv
 
