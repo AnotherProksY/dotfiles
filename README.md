@@ -21,7 +21,7 @@ brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh pinen
 Casks:
 
 ```bash
-brew install --casks tableplus telegram appcleaner discord docker skype whatsapp protonvpn boop maccy numi qlmarkdown zoom notion spotify
+brew install --casks tableplus telegram appcleaner discord docker whatsapp protonvpn boop maccy numi qlmarkdown notion spotify
 ```
 
 ## Другие программы
