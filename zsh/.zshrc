@@ -40,6 +40,7 @@ alias pip='python3 -m pip'
 alias grep='grep --color=always'
 alias genpass='openssl rand -base64 16'
 alias fzf='fzf --preview "([[ -f {} ]] && (bat --style=numbers --color=always {} || cat {})) || ([[ -d {} ]] && (tree -C {} | less)) || echo {} 2> /dev/null | head -200"'
+alias base='cd /Users/k.fazilov/Library/Mobile\ Documents/com\~apple\~CloudDocs/Notes;ls'
 
 # Git aliases
 alias gita='git add .'
