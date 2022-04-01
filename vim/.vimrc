@@ -15,7 +15,6 @@ set smarttab
 set shiftwidth=4
 set expandtab
 set autoindent
-set number
 set hlsearch
 set ignorecase
 set incsearch
