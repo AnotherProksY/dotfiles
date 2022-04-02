@@ -34,6 +34,7 @@ brew install --casks tableplus telegram appcleaner discord docker whatsapp proto
 6. [Aseprite](https://www.aseprite.org)
 7. [Paper](https://apps.apple.com/ru/app/paper-writing-app/id1143513744?l=en&mt=12)
 8. [Whiskey](https://usewhiskey.com)
+9. [URL Linker for Safari](https://apps.apple.com/ru/app/url-linker-for-safari/id1289119450?l=en&mt=12)
 
 ## Pyenv
 
