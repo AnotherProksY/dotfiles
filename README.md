@@ -32,6 +32,7 @@ brew install --casks tableplus telegram appcleaner discord docker whatsapp proto
 4. [DaisyDisk](https://apps.apple.com/ru/app/daisydisk/id411643860?l=en&mt=12)
 5. [The Unarchiver](https://apps.apple.com/ru/app/the-unarchiver/id425424353?mt=12)
 6. [Aseprite](https://www.aseprite.org)
+7. [Paper](https://apps.apple.com/ru/app/paper-writing-app/id1143513744?l=en&mt=12)
 
 ## Pyenv
 
