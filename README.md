@@ -14,7 +14,7 @@ Formula:
 # Удаление утилит вместе с ее зависимостями
 brew tap beeftornado/rmtree
 
-brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh pinentry-mac gnupg vim nmap pandoc mvim
+brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh pinentry-mac gnupg vim nmap pandoc macvim
 /usr/local/opt/fzf/install
 ```
 

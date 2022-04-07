@@ -1,6 +1,6 @@
-set guifont=Monaco:h16
+set rtp+=~/.config/vim
+set guifont=Monaco:h18
 set guioptions=
-set rtp+=~/.config/vim/gruvbox/
-colorscheme gruvbox
-set background=dark
+let ayucolor="light"
+colorscheme ayu
 set antialias
