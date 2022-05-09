@@ -4,7 +4,6 @@ command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 command! MakeTags !/opt/homebrew/bin/ctags -R .
 noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
-inoremap jk <esc>
 command Todo noautocmd vimgrep /TODO\|FIXME/j ** | cw
 map <C-j> :cn<CR>
 map <C-k> :cp<CR>
