@@ -14,14 +14,14 @@ Formula:
 # Удаление утилит вместе с ее зависимостями
 brew tap beeftornado/rmtree
 
-brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh pinentry-mac gnupg vim nmap pandoc
+brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh pinentry-mac gnupg vim nmap pandoc cmatrix
 /usr/local/opt/fzf/install
 ```
 
 Casks:
 
 ```bash
-brew install --casks tableplus telegram appcleaner discord docker whatsapp protonvpn boop maccy numi spotify visual-studio-code openemu zoom
+brew install --casks tableplus telegram appcleaner discord docker whatsapp protonvpn boop maccy numi spotify visual-studio-code openemu zoom raspberry-pi-imager firefox
 ```
 
 ## Другие программы
