@@ -37,7 +37,6 @@ brew install --casks tableplus telegram appcleaner discord docker whatsapp proto
 9. [HTTPie Desktop](https://httpie.io/product)
 10. [Magnet](https://apps.apple.com/ru/app/magnet/id441258766?l=en&mt=12)
 11. [Pico-8](https://www.lexaloffle.com/pico-8.php)
-12. [Vimari](https://apps.apple.com/ru/app/vimari/id1480933944?l=en&mt=12)
 
 ## Pyenv
 
