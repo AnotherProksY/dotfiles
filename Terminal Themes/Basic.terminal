@@ -26,7 +26,7 @@
 	<key>RunCommandAsShell</key>
 	<true/>
 	<key>ShowActiveProcessInTabTitle</key>
-	<false/>
+	<true/>
 	<key>ShowActiveProcessInTitle</key>
 	<false/>
 	<key>ShowCommandKeyInTitle</key>
@@ -34,7 +34,7 @@
 	<key>ShowDimensionsInTitle</key>
 	<false/>
 	<key>ShowRepresentedURLInTabTitle</key>
-	<false/>
+	<true/>
 	<key>ShowRepresentedURLInTitle</key>
 	<true/>
 	<key>ShowRepresentedURLPathInTitle</key>

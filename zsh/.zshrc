@@ -24,23 +24,25 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' list-suffixes true
 zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 zstyle ':completion:*' special-dirs true
+zstyle ':completion:*:descriptions' format "$fg[yellow]%B--- %d%b"
+zstyle ':completion:*:messages' format '%d'
+zstyle ':completion:*:warnings' format "$fg[red]No matches for:$reset_color %d"
+zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
 zstyle :compinstall filename '/Users/k.fazilov/.zshrc'
 
 # Shift-Tab
 bindkey '^[[Z' reverse-menu-complete
 
 # Aliases
-alias p='pass'
 alias dev='cd /Users/k.fazilov/Dev;ls'
 alias ls='ls -GF'
 alias o='open .'
-alias rm='rm -f'
+alias rm='rm -rf'
 alias py='python3'
 alias pip='python3 -m pip'
 alias grep='grep --color=always'
 alias genpass='openssl rand -base64 16'
 alias fzf='fzf --preview "([[ -f {} ]] && (bat --style=numbers --color=always {} || cat {})) || ([[ -d {} ]] && (tree -C {} | less)) || echo {} 2> /dev/null | head -200"'
-alias notes='cd /Users/k.fazilov/Library/Mobile\ Documents/com\~apple\~CloudDocs/Notes;ls'
 
 # Git aliases
 alias gita='git add .'
@@ -50,7 +52,7 @@ alias gitpl='git pull'
 alias gits='git status'
 alias gitl='git log --reverse'
 alias gitl2='git log --reverse --max-count 2'
-alias giff='git diff HEAD^ HEAD'
+alias giff='git diff --word-diff=plain HEAD^ HEAD'
 alias gip='git remote prune origin'
 alias gir='git reset --soft HEAD~1'
 
@@ -60,6 +62,3 @@ alias untar='echo "tar -xf"'
 
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# heroku autocomplete setup
-HEROKU_AC_ZSH_SETUP_PATH=/Users/k.fazilov/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
