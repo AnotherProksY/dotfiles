@@ -34,5 +34,4 @@ filetype plugin on
 filetype indent on
 
 " Colors
-colorscheme default
-hi Comment ctermfg=34
+colorscheme habamax
