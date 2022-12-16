@@ -10,6 +10,7 @@ map <C-k> :cp<CR>
 
 " Settings
 syntax on
+set number
 set tabstop=4
 set smarttab
 set shiftwidth=4
