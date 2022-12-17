@@ -51,6 +51,8 @@
 	<false/>
 	<key>WindowTitle</key>
 	<string></string>
+	<key>columnCount</key>
+	<integer>90</integer>
 	<key>name</key>
 	<string>Basic</string>
 	<key>noWarnProcesses</key>
@@ -61,7 +63,7 @@
 		</dict>
 	</array>
 	<key>rowCount</key>
-	<integer>30</integer>
+	<integer>25</integer>
 	<key>shellExitAction</key>
 	<integer>1</integer>
 	<key>type</key>

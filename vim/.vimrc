@@ -35,4 +35,5 @@ filetype plugin on
 filetype indent on
 
 " Colors
-colorscheme habamax
+colorscheme default
+hi Comment ctermfg=darkgray
