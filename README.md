@@ -21,7 +21,7 @@ brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh pinen
 Casks:
 
 ```bash
-brew install --casks tableplus telegram appcleaner discord docker whatsapp protonvpn boop clipy numi spotify visual-studio-code openemu zoom raspberry-pi-imager firefox transmission min
+brew install --casks tableplus telegram appcleaner discord docker whatsapp protonvpn boop clipy numi spotify visual-studio-code openemu zoom raspberry-pi-imager firefox transmission min notion dbeaver-community
 ```
 
 ## Другие программы
@@ -37,6 +37,7 @@ brew install --casks tableplus telegram appcleaner discord docker whatsapp proto
 9. [HTTPie Desktop](https://httpie.io/product)
 10. [Magnet](https://apps.apple.com/ru/app/magnet/id441258766?l=en&mt=12)
 11. [Pico-8](https://www.lexaloffle.com/pico-8.php)
+12. [Min Browser](https://minbrowser.org)
 
 ## Pyenv
 
