@@ -39,6 +39,7 @@ brew install --casks tableplus telegram appcleaner discord docker whatsapp proto
 11. [Pico-8](https://www.lexaloffle.com/pico-8.php)
 12. [Min Browser](https://minbrowser.org)
 13. [Todoist](https://apps.apple.com/ru/app/todoist-to-do-list-tasks/id585829637?l=en&mt=12)
+14. [Shortery](https://apps.apple.com/ru/app/shortery/id1594183810?l=en&mt=12)
 
 ## Pyenv
 
