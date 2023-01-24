@@ -14,14 +14,14 @@ Formula:
 # Удаление утилит вместе с ее зависимостями
 brew tap beeftornado/rmtree
 
-brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh pinentry-mac gnupg vim nmap pandoc cmatrix
+brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh pinentry-mac gnupg vim nmap pandoc
 /usr/local/opt/fzf/install
 ```
 
 Casks:
 
 ```bash
-brew install --casks tableplus telegram appcleaner discord docker whatsapp protonvpn boop clipy numi spotify visual-studio-code openemu zoom raspberry-pi-imager firefox transmission min notion dbeaver-community pycharm-ce deepl
+brew install --casks tableplus telegram appcleaner discord docker protonvpn boop clipy numi spotify visual-studio-code openemu zoom raspberry-pi-imager firefox transmission min notion deepl
 ```
 
 ## Другие программы
@@ -40,6 +40,7 @@ brew install --casks tableplus telegram appcleaner discord docker whatsapp proto
 12. [Min Browser](https://minbrowser.org)
 13. [Todoist](https://apps.apple.com/ru/app/todoist-to-do-list-tasks/id585829637?l=en&mt=12)
 14. [Shortery](https://apps.apple.com/ru/app/shortery/id1594183810?l=en&mt=12)
+15. [WhatsApp](https://apps.apple.com/ru/app/whatsapp-desktop/id1147396723?l=en&mt=12)
 
 ## Pyenv
 
