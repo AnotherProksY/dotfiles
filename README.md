@@ -21,7 +21,7 @@ brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh pinen
 Casks:
 
 ```bash
-brew install --casks tableplus telegram appcleaner discord docker protonvpn boop clipy numi spotify visual-studio-code openemu zoom raspberry-pi-imager firefox transmission min notion deepl
+brew install --casks tableplus telegram appcleaner discord docker protonvpn boop clipy numi spotify visual-studio-code openemu zoom raspberry-pi-imager firefox transmission notion deepl
 ```
 
 ## Другие программы
@@ -37,10 +37,9 @@ brew install --casks tableplus telegram appcleaner discord docker protonvpn boop
 9. [HTTPie Desktop](https://httpie.io/product)
 10. [Magnet](https://apps.apple.com/ru/app/magnet/id441258766?l=en&mt=12)
 11. [Pico-8](https://www.lexaloffle.com/pico-8.php)
-12. [Min Browser](https://minbrowser.org)
-13. [Todoist](https://apps.apple.com/ru/app/todoist-to-do-list-tasks/id585829637?l=en&mt=12)
-14. [Shortery](https://apps.apple.com/ru/app/shortery/id1594183810?l=en&mt=12)
-15. [WhatsApp](https://apps.apple.com/ru/app/whatsapp-desktop/id1147396723?l=en&mt=12)
+12. [Todoist](https://apps.apple.com/ru/app/todoist-to-do-list-tasks/id585829637?l=en&mt=12)
+13. [Shortery](https://apps.apple.com/ru/app/shortery/id1594183810?l=en&mt=12)
+14. [WhatsApp](https://apps.apple.com/ru/app/whatsapp-desktop/id1147396723?l=en&mt=12)
 
 ## Pyenv
 
