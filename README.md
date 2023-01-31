@@ -37,9 +37,8 @@ brew install --casks tableplus telegram appcleaner discord docker protonvpn boop
 9. [HTTPie Desktop](https://httpie.io/product)
 10. [Magnet](https://apps.apple.com/ru/app/magnet/id441258766?l=en&mt=12)
 11. [Pico-8](https://www.lexaloffle.com/pico-8.php)
-12. [Todoist](https://apps.apple.com/ru/app/todoist-to-do-list-tasks/id585829637?l=en&mt=12)
-13. [Shortery](https://apps.apple.com/ru/app/shortery/id1594183810?l=en&mt=12)
-14. [WhatsApp](https://apps.apple.com/ru/app/whatsapp-desktop/id1147396723?l=en&mt=12)
+12. [Shortery](https://apps.apple.com/ru/app/shortery/id1594183810?l=en&mt=12)
+13. [WhatsApp](https://apps.apple.com/ru/app/whatsapp-desktop/id1147396723?l=en&mt=12)
 
 ## Pyenv
 
