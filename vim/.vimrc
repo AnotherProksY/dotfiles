@@ -14,6 +14,7 @@ set number
 set tabstop=4
 set smarttab
 set shiftwidth=4
+set softtabstop=4
 set expandtab
 set autoindent
 set hlsearch
@@ -30,6 +31,8 @@ set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNO
 set backspace=start,eol,indent
 set hidden
 set noswapfile
+let g:netrw_liststyle=3 " tree style
+let g:netrw_browse_split=3 " open file in new tab
 
 filetype plugin on
 filetype indent on
