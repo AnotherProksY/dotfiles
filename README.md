@@ -21,7 +21,7 @@ brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh pinen
 Casks:
 
 ```bash
-brew install --casks tableplus telegram appcleaner discord docker boop clipy numi visual-studio-code zoom firefox transmission imazing figma
+brew install --casks tableplus telegram appcleaner discord docker boop clipy numi zoom firefox transmission imazing figma
 ```
 
 ## Другие программы
