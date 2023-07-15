@@ -7,6 +7,10 @@ inoremap <F12> <C-o>:syntax sync fromstart<CR>
 command Todo noautocmd vimgrep /TODO\|FIXME/j ** | cw
 map <C-j> :cn<CR>
 map <C-k> :cp<CR>
+vnoremap < <gv
+vnoremap > >gv
+nnoremap <Leader>rc :%s/\<<C-r><C-w>\>/<C-r><C-w>
+vnoremap <Leader>rc y:%s/<C-r>"/<C-r>"
 
 " Settings
 syntax on
