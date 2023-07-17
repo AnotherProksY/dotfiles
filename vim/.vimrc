@@ -11,6 +11,7 @@ vnoremap < <gv
 vnoremap > >gv
 nnoremap <Leader>rc :%s/\<<C-r><C-w>\>/<C-r><C-w>
 vnoremap <Leader>rc y:%s/<C-r>"/<C-r>"
+nnoremap ,<space> :nohlsearch<CR>
 
 " Settings
 syntax on
