@@ -12,6 +12,7 @@ vnoremap > >gv
 nnoremap <Leader>rc :%s/\<<C-r><C-w>\>/<C-r><C-w>
 vnoremap <Leader>rc y:%s/<C-r>"/<C-r>"
 nnoremap ,<space> :nohlsearch<CR>
+map <C-n> :Vexplore<CR>
 
 " Settings
 syntax on
@@ -36,8 +37,10 @@ set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNO
 set backspace=start,eol,indent
 set hidden
 set noswapfile
+let g:netrw_banner=0 " get rid of banner
 let g:netrw_liststyle=3 " tree style
 let g:netrw_browse_split=3 " open file in new tab
+let g:netrw_winsize=25
 
 filetype plugin on
 filetype indent on

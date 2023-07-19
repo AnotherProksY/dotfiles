@@ -9,13 +9,13 @@
   signingKey = E2B09B23
 [core]
   editor = vi
-	excludesfile = /Users/k.fazilov/.gitignore_global
+  excludesfile = /Users/k.fazilov/.gitignore_global
 [credential]
   helper = osxkeychain
 [diff]
   tool = vimdiff
 [difftool]
-	prompt = false
+  prompt = false
 [merge]
   tool = vimdiff
 [pull]
@@ -27,4 +27,4 @@
 [gpg]
   program = /opt/homebrew/bin/gpg
 [alias]
-	diff = diff --word-diff
+  diff = diff --word-diff

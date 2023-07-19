@@ -13,6 +13,8 @@ export PASSWORD_STORE_ENABLE_EXTENSIONS=true
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+setopt EXTENDED_HISTORY
+
 # Completions
 autoload -Uz compinit && compinit
 zmodload -i zsh/complist
@@ -36,6 +38,7 @@ bindkey '^[[Z' reverse-menu-complete
 # Aliases
 alias dev='cd /Users/k.fazilov/Dev;ls'
 alias ls='ls -GF'
+alias l='ls -GFla'
 alias o='open .'
 alias rm='rm -rf'
 alias py='python3'
