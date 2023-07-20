@@ -4,8 +4,6 @@ source ~/.vimrc
 
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'AnotherProksY/ez-window'
-
 " LSP
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -13,23 +11,24 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'ray-x/lsp_signature.nvim'
+Plug 'bmatcuk/stylelint-lsp'
 
 " Colorscheme
 Plug 'morhetz/gruvbox'
 Plug 'ayu-theme/ayu-vim'
 Plug 'mhartington/oceanic-next'
-
 " Plug 'xiyaowong/nvim-transparent'
 
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install --frozen-lockfile --production',
   \ 'for': ['javascript', 'typescript', 'typescriptreact', 'javascriptreact', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 
-Plug 'bmatcuk/stylelint-lsp'
-
+" Fuzzy search
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-lua/plenary.nvim'
+
+Plug 'preservim/tagbar'
 
 call plug#end()
 
@@ -48,6 +47,21 @@ let g:prettier#quickfix_enabled = 0
 " Telescope bindings
 nnoremap ,f <cmd>Telescope find_files<cr>
 nnoremap ,g <cmd>Telescope live_grep<cr>
+
+nmap <F8> :TagbarToggle<CR>
+
+let g:tagbar_type_groovy = {
+    \ 'ctagstype' : 'groovy',
+    \ 'kinds'     : [
+        \ 'p:package:1',
+        \ 'c:classes',
+        \ 'i:interfaces',
+        \ 't:traits',
+        \ 'e:enums',
+        \ 'm:methods',
+        \ 'f:fields:1'
+    \ ]
+\ }
 
 " Telescope fzf plugin
 lua << EOF
