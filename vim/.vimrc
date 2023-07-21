@@ -36,7 +36,8 @@ set mouse=nv
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
 set backspace=start,eol,indent
 set hidden
-set noswapfile
+set completeopt=menuone,noselect
+set t_Co=256
 let g:netrw_banner=0 " get rid of banner
 let g:netrw_liststyle=3 " tree style
 let g:netrw_browse_split=3 " open file in new tab

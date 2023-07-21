@@ -1,7 +1,9 @@
+" Vim config
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 source ~/.vimrc
 
+" Nvim config
 call plug#begin('~/.config/nvim/plugged')
 
 " LSP
@@ -14,11 +16,10 @@ Plug 'ray-x/lsp_signature.nvim'
 Plug 'bmatcuk/stylelint-lsp'
 
 " Colorscheme
-Plug 'morhetz/gruvbox'
-Plug 'ayu-theme/ayu-vim'
-Plug 'mhartington/oceanic-next'
-" Plug 'xiyaowong/nvim-transparent'
+Plug 'crusoexia/vim-monokai'
+Plug 'vim-python/python-syntax'
 
+" Prettier
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install --frozen-lockfile --production',
   \ 'for': ['javascript', 'typescript', 'typescriptreact', 'javascriptreact', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
@@ -28,16 +29,14 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-lua/plenary.nvim'
 
+" Tags
 Plug 'preservim/tagbar'
-
 call plug#end()
 
 
-colorscheme gruvbox
-hi DiagnosticError guifg=White
-hi DiagnosticWarn  guifg=White
-hi DiagnosticInfo  guifg=White
-hi DiagnosticHint  guifg=White
+colorscheme monokai
+let g:python_highlight_all = 1
+let g:monokai_term_italic = 1
 
 " Automatically format frontend files with prettier after file save
 let g:prettier#autoformat = 1
@@ -63,25 +62,18 @@ let g:tagbar_type_groovy = {
     \ ]
 \ }
 
-" Telescope fzf plugin
 lua << EOF
+-- Telescope fzf plugin
 require('telescope').load_extension('fzf')
-EOF
-
-lua << EOF
--- Set completeopt to have a better completion experience
-vim.o.completeopt = 'menuone,noselect'
 
 -- luasnip setup
 local luasnip = require 'luasnip'
+local nvim_lsp = require('lspconfig')
 local async = require "plenary.async"
 
 -- nvim-cmp setup
 local cmp = require 'cmp'
 cmp.setup {
-  completion = {
-    autocomplete = false
-  },
   snippet = {
     expand = function(args)
       require('luasnip').lsp_expand(args.body)
@@ -123,7 +115,6 @@ cmp.setup {
   },
 }
 
-local nvim_lsp = require('lspconfig')
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
@@ -139,23 +130,9 @@ local on_attach = function(client, bufnr)
   local opts = { noremap=true, silent=true }
 
   -- See `:help vim.lsp.*` for documentation on any of the below functions
-  buf_set_keymap('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opts)
-  buf_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
   buf_set_keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
-  buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
-  buf_set_keymap('n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
-  buf_set_keymap('n', '<space>wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>', opts)
-  buf_set_keymap('n', '<space>wr', '<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>', opts)
-  buf_set_keymap('n', '<space>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>', opts)
-  buf_set_keymap('n', '<space>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
   buf_set_keymap('n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
-  buf_set_keymap('n', '<space>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
   buf_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
-  buf_set_keymap('n', '<space>e', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
-  buf_set_keymap('n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', opts)
-  buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
-  buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
-  buf_set_keymap('n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 
   require "lsp_signature".on_attach({
       bind = true, -- This is mandatory, otherwise border config won't get registered.
@@ -169,7 +146,7 @@ end
 
 
 -- Stylelint format after save
-require'lspconfig'.stylelint_lsp.setup{
+nvim_lsp.stylelint_lsp.setup{
   settings = {
     stylelintplus = {
       --autoFixOnSave = true,
@@ -181,13 +158,25 @@ require'lspconfig'.stylelint_lsp.setup{
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { 'pyright' }
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
+
+local servers = { 'pyright', 'groovyls', 'dockerls', 'docker_compose_language_service' }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,
+    capabilities = capabilities,
     flags = {
       debounce_text_changes = 150,
     }
   }
 end
+
+-- Groovy (read :help lspconfig-all)
+nvim_lsp.groovyls.setup{
+    cmd = { "java", "-jar", "/opt/homebrew/Cellar/groovy/4.0.13/libexec/lib/groovy-language-server-all.jar" },
+    filetypes = {
+        "groovy",
+    },
+}
 EOF
