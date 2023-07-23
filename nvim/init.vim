@@ -17,7 +17,9 @@ Plug 'bmatcuk/stylelint-lsp'
 
 " Colorscheme
 Plug 'crusoexia/vim-monokai'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'vim-python/python-syntax'
+Plug 'f-person/auto-dark-mode.nvim'
 
 " Prettier
 Plug 'prettier/vim-prettier', {
@@ -34,7 +36,23 @@ Plug 'preservim/tagbar'
 call plug#end()
 
 
-colorscheme monokai
+lua << EOF
+local auto_dark_mode = require('auto-dark-mode')
+
+auto_dark_mode.setup({
+	update_interval = 1000,
+	set_dark_mode = function()
+		vim.api.nvim_set_option('background', 'dark')
+		vim.cmd('colorscheme monokai')
+	end,
+	set_light_mode = function()
+		vim.api.nvim_set_option('background', 'light')
+		vim.cmd('colorscheme PaperColor')
+	end,
+})
+auto_dark_mode.init()
+EOF
+
 let g:python_highlight_all = 1
 let g:monokai_term_italic = 1
 
