@@ -14,12 +14,14 @@ Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'ray-x/lsp_signature.nvim'
 Plug 'bmatcuk/stylelint-lsp'
+Plug 'folke/trouble.nvim'
 
 " Colorscheme
 Plug 'crusoexia/vim-monokai'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'vim-python/python-syntax'
 Plug 'f-person/auto-dark-mode.nvim'
+Plug 'nvim-tree/nvim-web-devicons'
 
 " Prettier
 Plug 'prettier/vim-prettier', {
@@ -51,6 +53,18 @@ auto_dark_mode.setup({
 	end,
 })
 auto_dark_mode.init()
+
+local signs = {
+    Error = " ",
+    Warning = " ",
+    Hint = " ",
+    Information = " "
+}
+
+for type, icon in pairs(signs) do
+    local hl = "DiagnosticSign" .. type
+    vim.fn.sign_define(hl, {text = icon, texthl = hl, numhl = hl})
+end
 EOF
 
 let g:python_highlight_all = 1

@@ -13,6 +13,7 @@ Formula:
 ```bash
 # Удаление утилит вместе с ее зависимостями
 brew tap beeftornado/rmtree
+brew tap epk/epk
 
 brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh pinentry-mac gnupg vim nmap pandoc cloc nvim ripgrep java11 groovy
 /usr/local/opt/fzf/install
@@ -21,7 +22,7 @@ brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh pinen
 Casks:
 
 ```bash
-brew install --casks tableplus telegram appcleaner discord docker boop clipy numi zoom firefox transmission imazing figma
+brew install --casks tableplus telegram appcleaner discord docker boop clipy numi zoom firefox transmission imazing figma font-sf-mono-nerd-font
 ```
 
 ## Другие программы
