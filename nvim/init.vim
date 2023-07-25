@@ -56,9 +56,9 @@ auto_dark_mode.init()
 
 local signs = {
     Error = " ",
-    Warning = " ",
+    Warn = " ",
     Hint = " ",
-    Information = " "
+    Info = " "
 }
 
 for type, icon in pairs(signs) do
