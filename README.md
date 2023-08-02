@@ -25,6 +25,12 @@ Casks:
 brew install --casks tableplus telegram appcleaner discord docker boop clipy numi zoom firefox transmission imazing figma font-sf-mono-nerd-font
 ```
 
+npm modules:
+
+```bash
+npm i -g vscode-langservers-extracted @microsoft/compose-language-service dockerfile-language-server-nodejs pyright stylelint-lsp
+```
+
 ## Другие программы
 
 1. [Microsoft Excel](https://apps.apple.com/ru/app/microsoft-excel/id462058435?l=en&mt=12)
