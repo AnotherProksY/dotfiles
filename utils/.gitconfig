@@ -8,7 +8,7 @@
   email = k.fazilov@icloud.com
   signingKey = E2B09B23
 [core]
-  editor = vi
+  editor = vim
   excludesfile = /Users/k.fazilov/.gitignore_global
 [credential]
   helper = osxkeychain
@@ -21,7 +21,7 @@
 [pull]
   rebase = false
 [mergetool "vimdiff"]
-  path = vi
+  path = vim
 [init]
   defaultBranch = main
 [gpg]
