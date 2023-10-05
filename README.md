@@ -15,7 +15,7 @@ Formula:
 brew tap beeftornado/rmtree
 brew tap epk/epk
 
-brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh pinentry-mac gnupg vim nmap pandoc cloc nvim ripgrep java11 groovy
+brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh pinentry-mac gnupg vim nmap pandoc cloc neovim ripgrep java11 groovy mczachurski/wallpapper/wallpapper
 /usr/local/opt/fzf/install
 ```
 
@@ -46,6 +46,7 @@ npm i -g vscode-langservers-extracted @microsoft/compose-language-service docker
 11. [Pico-8](https://www.lexaloffle.com/pico-8.php)
 12. [Shortery](https://apps.apple.com/ru/app/shortery/id1594183810?l=en&mt=12)
 13. [WhatsApp](https://apps.apple.com/ru/app/whatsapp-desktop/id1147396723?l=en&mt=12)
+14. [Outline](https://apps.apple.com/ru/app/outline-secure-internet-access/id1356178125?l=en-GB&mt=12)
 
 ## Pyenv
 
