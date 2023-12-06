@@ -15,20 +15,14 @@ Formula:
 brew tap beeftornado/rmtree
 brew tap epk/epk
 
-brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh pinentry-mac gnupg vim nmap pandoc cloc neovim ripgrep java11 groovy mczachurski/wallpapper/wallpapper
+brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh pinentry-mac gnupg vim nmap pandoc cloc ripgrep mczachurski/wallpapper/wallpapper
 /usr/local/opt/fzf/install
 ```
 
 Casks:
 
 ```bash
-brew install --casks tableplus telegram appcleaner discord docker boop clipy numi zoom firefox transmission imazing font-sf-mono-nerd-font visual-studio-code outline-manager shadowsocksx-ng
-```
-
-npm modules:
-
-```bash
-npm i -g vscode-langservers-extracted @microsoft/compose-language-service dockerfile-language-server-nodejs pyright stylelint-lsp
+brew install --casks tableplus telegram appcleaner discord docker boop clipy numi zoom firefox transmission imazing visual-studio-code outline-manager shadowsocksx-ng
 ```
 
 ## Другие программы
