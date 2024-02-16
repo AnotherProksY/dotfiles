@@ -1,0 +1,14 @@
+" Basic Settings
+set showmode
+set incsearch
+set hlsearch
+set ideastatusicon=gray
+set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
+
+" IDE Settings
+map gh <Action>(QuickJavaDoc)
+map <leader>rn <Action>(RenameElement)
+map gr <Action>(FindUsages)
+vnoremap < <gv
+vnoremap > >gv
+nnoremap ,<space> :nohlsearch<CR>
