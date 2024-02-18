@@ -1,4 +1,5 @@
 " Basic Settings
+set ideajoin
 set showmode
 set incsearch
 set hlsearch
