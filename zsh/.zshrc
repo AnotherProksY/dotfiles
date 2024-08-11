@@ -12,6 +12,11 @@ export PASSWORD_STORE_ENABLE_EXTENSIONS=true
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"
 export GROOVY_HOME=/opt/homebrew/opt/groovy/libexec
 
+# Option key movement
+bindkey -e
+bindkey '\e\e[C' forward-word
+bindkey '\e\e[D' backward-word
+
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
