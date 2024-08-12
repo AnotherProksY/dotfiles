@@ -22,7 +22,7 @@ brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh pinen
 Casks:
 
 ```bash
-brew install --casks tableplus telegram appcleaner discord docker boop zoom firefox transmission imazing visual-studio-code outline-manager shadowsocksx-ng pycharm maccy obsidian
+brew install --casks tableplus telegram appcleaner discord docker boop zoom firefox transmission imazing visual-studio-code outline-manager shadowsocksx-ng pycharm maccy betterdisplay
 ```
 
 ## Другие программы
@@ -41,6 +41,7 @@ brew install --casks tableplus telegram appcleaner discord docker boop zoom fire
 12. [Shortery](https://apps.apple.com/ru/app/shortery/id1594183810?l=en&mt=12)
 13. [WhatsApp](https://apps.apple.com/ru/app/whatsapp-desktop/id1147396723?l=en&mt=12)
 14. [Outline](https://apps.apple.com/ru/app/outline-secure-internet-access/id1356178125?l=en-GB&mt=12)
+15. [Exporter](https://apps.apple.com/ru/app/exporter/id1099120373?l=en-GB&mt=12)
 
 ## Pyenv
 
