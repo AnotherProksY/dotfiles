@@ -15,14 +15,14 @@ Formula:
 brew tap beeftornado/rmtree
 brew tap epk/epk
 
-brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh pinentry-mac gnupg vim nmap pandoc cloc ripgrep mczachurski/wallpapper/wallpapper
+brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh vim nmap mczachurski/wallpapper/wallpapper
 /usr/local/opt/fzf/install
 ```
 
 Casks:
 
 ```bash
-brew install --casks tableplus telegram appcleaner discord docker boop zoom firefox transmission imazing visual-studio-code outline-manager shadowsocksx-ng pycharm maccy betterdisplay spotify
+brew install --casks tableplus telegram appcleaner discord docker boop imazing visual-studio-code maccy spotify figma obsidian chatgpt the-unarchiver httpie
 ```
 
 ## Другие программы
@@ -35,13 +35,12 @@ brew install --casks tableplus telegram appcleaner discord docker boop zoom fire
 6. [Aseprite](https://www.aseprite.org)
 7. [JSON Peep](https://apps.apple.com/ru/app/json-peep-for-safari/id1458969831?l=en&mt=12)
 8. [Docker desktop](https://www.docker.com/products/docker-desktop/)
-9. [HTTPie Desktop](https://httpie.io/product)
-10. [Magnet](https://apps.apple.com/ru/app/magnet/id441258766?l=en&mt=12)
-11. [Pico-8](https://www.lexaloffle.com/pico-8.php)
-12. [Shortery](https://apps.apple.com/ru/app/shortery/id1594183810?l=en&mt=12)
-13. [WhatsApp](https://apps.apple.com/ru/app/whatsapp-desktop/id1147396723?l=en&mt=12)
-14. [Outline](https://apps.apple.com/ru/app/outline-secure-internet-access/id1356178125?l=en-GB&mt=12)
-15. [Exporter](https://apps.apple.com/ru/app/exporter/id1099120373?l=en-GB&mt=12)
+9. [Magnet](https://apps.apple.com/ru/app/magnet/id441258766?l=en&mt=12)
+10. [Pico-8](https://www.lexaloffle.com/pico-8.php)
+11. [Shortery](https://apps.apple.com/ru/app/shortery/id1594183810?l=en&mt=12)
+12. [WhatsApp](https://apps.apple.com/ru/app/whatsapp-desktop/id1147396723?l=en&mt=12)
+13. [Outline](https://apps.apple.com/ru/app/outline-secure-internet-access/id1356178125?l=en-GB&mt=12)
+14. [Exporter](https://apps.apple.com/ru/app/exporter/id1099120373?l=en-GB&mt=12)
 
 ## Pyenv
 

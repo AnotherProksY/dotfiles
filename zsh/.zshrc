@@ -9,8 +9,6 @@ export EDITOR=vim
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export PASSWORD_STORE_ENABLE_EXTENSIONS=true
-export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"
-export GROOVY_HOME=/opt/homebrew/opt/groovy/libexec
 
 # Option key movement
 bindkey -e
@@ -72,4 +70,4 @@ alias newtar='echo "tar -czf"'
 alias untar='echo "tar -xf"'
 
 # FZF
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
