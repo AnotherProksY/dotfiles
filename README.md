@@ -15,7 +15,7 @@ Formula:
 brew tap beeftornado/rmtree
 brew tap epk/epk
 
-brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh vim nmap mczachurski/wallpapper/wallpapper git-lfs
+brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh vim nmap mczachurski/wallpapper/wallpapper git-lfs ripgrep nvim npm
 /usr/local/opt/fzf/install
 ```
 
