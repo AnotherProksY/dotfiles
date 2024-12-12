@@ -8,20 +8,20 @@
   email = k.fazilov@icloud.com
   signingKey = E2B09B23
 [core]
-  editor = vim
+  editor = nvim -f
   excludesfile = /Users/k.fazilov/.gitignore_global
 [credential]
   helper = osxkeychain
 [diff]
-  tool = vimdiff
+  tool = nvimdiff
 [difftool]
   prompt = false
 [merge]
-  tool = vimdiff
+  tool = nvimdiff
 [pull]
   rebase = false
-[mergetool "vimdiff"]
-  path = vim
+[mergetool "nvimdiff"]
+  path = nvim -f
 [init]
   defaultBranch = main
 [gpg]
