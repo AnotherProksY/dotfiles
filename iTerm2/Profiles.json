@@ -92,9 +92,9 @@
   },
   "Open Toolbelt" : false,
   "Keyboard Map" : {
-    "0xf703-0x300000" : {
-      "Action" : 11,
-      "Text" : "0x5"
+    "0xf703-0x280000" : {
+      "Action" : 10,
+      "Text" : "f"
     },
     "0xf702-0x280000" : {
       "Action" : 10,
@@ -104,21 +104,24 @@
       "Action" : 11,
       "Text" : "0x1"
     },
-    "0xf703-0x280000" : {
+    "0xf728-0x80000" : {
       "Action" : 10,
-      "Text" : "f"
+      "Text" : "d"
     },
     "0x7f-0x100000" : {
       "Action" : 11,
       "Text" : "0x15"
     },
-    "0xf728-0x80000" : {
-      "Action" : 10,
-      "Text" : "d"
+    "0xf703-0x300000" : {
+      "Action" : 11,
+      "Text" : "0x5"
     },
     "0x7f-0x80000" : {
+      "Version" : 2,
+      "Apply Mode" : 0,
       "Action" : 11,
-      "Text" : "\"0x1b 0x7f\""
+      "Text" : "0x17",
+      "Escaping" : 1
     },
     "0xf728-0x0" : {
       "Action" : 11,
@@ -509,8 +512,8 @@
   },
   "Title Components" : 256,
   "Semantic History" : {
-    "text" : "vim",
     "action" : "best editor",
+    "text" : "vim",
     "editor" : "com.github.atom"
   },
   "Working Directory" : "\/Users\/k.fazilov",
@@ -659,7 +662,7 @@
   }
 },
 {
-  "Close Sessions On End" : true,
+  "Non-ASCII Anti Aliased" : true,
   "HotKey Modifier Flags" : 0,
   "Ansi 15 Color (Dark)" : {
     "Red Component" : 0.99999600648880005,
@@ -668,7 +671,13 @@
     "Alpha Component" : 1,
     "Green Component" : 1
   },
-  "Non-ASCII Anti Aliased" : true,
+  "Foreground Color (Dark)" : {
+    "Red Component" : 0.86197912693023682,
+    "Color Space" : "sRGB",
+    "Blue Component" : 0.86198854446411133,
+    "Alpha Component" : 1,
+    "Green Component" : 0.86199951171875
+  },
   "Cursor Text Color" : {
     "Red Component" : 1,
     "Color Space" : "sRGB",
@@ -880,8 +889,8 @@
   },
   "Title Components" : 256,
   "Semantic History" : {
-    "text" : "vim",
     "action" : "best editor",
+    "text" : "vim",
     "editor" : "com.github.atom"
   },
   "Ansi 9 Color (Dark)" : {
@@ -1144,17 +1153,13 @@
     "Green Component" : 0.78105825185775757
   },
   "Keyboard Map" : {
-    "0x7f-0x80000" : {
-      "Action" : 11,
-      "Text" : "\"0x1b 0x7f\""
+    "0xf703-0x280000" : {
+      "Action" : 10,
+      "Text" : "f"
     },
     "0xf702-0x280000" : {
       "Action" : 10,
       "Text" : "b"
-    },
-    "0xf702-0x300000" : {
-      "Action" : 11,
-      "Text" : "0x1"
     },
     "0x74-0x100000" : {
       "Version" : 2,
@@ -1163,9 +1168,13 @@
       "Text" : "66CCB179-0B5A-4BCA-BBE0-D7CF9BEB8B83",
       "Escaping" : 2
     },
-    "0xf703-0x280000" : {
+    "0xf702-0x300000" : {
+      "Action" : 11,
+      "Text" : "0x1"
+    },
+    "0xf728-0x80000" : {
       "Action" : 10,
-      "Text" : "f"
+      "Text" : "d"
     },
     "0x7f-0x100000" : {
       "Action" : 11,
@@ -1175,13 +1184,13 @@
       "Action" : 11,
       "Text" : "0x5"
     },
-    "0xf728-0x80000" : {
-      "Action" : 10,
-      "Text" : "d"
-    },
     "0xf728-0x0" : {
       "Action" : 11,
       "Text" : "0x4"
+    },
+    "0x7f-0x80000" : {
+      "Action" : 11,
+      "Text" : "\"0x1b 0x7f\""
     }
   },
   "Bold Color (Dark)" : {
@@ -1326,19 +1335,13 @@
     "Alpha Component" : 1,
     "Green Component" : 0.67044717073440552
   },
+  "Close Sessions On End" : true,
   "Ansi 0 Color" : {
     "Red Component" : 0.078431375324726105,
     "Color Space" : "sRGB",
     "Blue Component" : 0.11764705926179886,
     "Alpha Component" : 1,
     "Green Component" : 0.098039217293262482
-  },
-  "Foreground Color (Dark)" : {
-    "Red Component" : 0.86197912693023682,
-    "Color Space" : "sRGB",
-    "Blue Component" : 0.86198854446411133,
-    "Alpha Component" : 1,
-    "Green Component" : 0.86199951171875
   }
 },
 {
@@ -1434,9 +1437,9 @@
   },
   "Open Toolbelt" : false,
   "Keyboard Map" : {
-    "0xf703-0x300000" : {
+    "0xf728-0x0" : {
       "Action" : 11,
-      "Text" : "0x5"
+      "Text" : "0x4"
     },
     "0xf702-0x280000" : {
       "Action" : 10,
@@ -1450,21 +1453,21 @@
       "Action" : 10,
       "Text" : "f"
     },
-    "0x7f-0x100000" : {
-      "Action" : 11,
-      "Text" : "0x15"
-    },
     "0xf728-0x80000" : {
       "Action" : 10,
       "Text" : "d"
     },
+    "0x7f-0x100000" : {
+      "Action" : 11,
+      "Text" : "0x15"
+    },
+    "0xf703-0x300000" : {
+      "Action" : 11,
+      "Text" : "0x5"
+    },
     "0x7f-0x80000" : {
       "Action" : 11,
       "Text" : "\"0x1b 0x7f\""
-    },
-    "0xf728-0x0" : {
-      "Action" : 11,
-      "Text" : "0x4"
     }
   },
   "Ansi 3 Color (Dark)" : {
@@ -1851,8 +1854,8 @@
   },
   "Title Components" : 256,
   "Semantic History" : {
-    "text" : "vim",
     "action" : "best editor",
+    "text" : "vim",
     "editor" : "com.github.atom"
   },
   "Working Directory" : "\/Users\/k.fazilov",
