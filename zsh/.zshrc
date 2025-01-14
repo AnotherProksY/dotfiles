@@ -41,6 +41,7 @@ zstyle :compinstall filename '/Users/k.fazilov/.zshrc'
 bindkey '^[[Z' reverse-menu-complete
 
 # Aliases
+alias vim='nvim'
 alias dev='cd /Users/k.fazilov/Dev;ls'
 alias ls='ls -GF'
 alias l='ls -GFla'
@@ -71,3 +72,7 @@ alias untar='echo "tar -xf"'
 
 # FZF
 source <(fzf --zsh)
+
+export COLUMNS="120"
+
+export PATH="$PATH:/Users/k.fazilov/ACLI"
