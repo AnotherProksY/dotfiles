@@ -23,7 +23,7 @@ brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh vim n
 Casks:
 
 ```bash
-brew install --casks tableplus telegram appcleaner discord docker boop imazing visual-studio-code maccy spotify figma obsidian the-unarchiver httpie font-sf-mono-nerd-font-ligaturized iterm2 proxyman google-chrome mongodb-compass
+brew install --casks tableplus telegram appcleaner discord docker boop imazing visual-studio-code maccy spotify figma obsidian the-unarchiver httpie font-sf-mono-nerd-font-ligaturized iterm2 proxyman google-chrome mongodb-compass nikitabobko/tap/aerospace
 ```
 
 ## Другие программы
