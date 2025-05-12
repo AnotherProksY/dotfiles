@@ -121,15 +121,16 @@ automatically-unhide-macos-hidden-apps = false
     alt-equal = 'resize smart +50'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-    alt-1 = 'workspace 1'
-    alt-2 = 'workspace 2'
-    alt-3 = 'workspace 3'
-    alt-4 = 'workspace 4'
-    alt-5 = 'workspace 5'
-    alt-6 = 'workspace 6'
-    alt-7 = 'workspace 7'
-    alt-8 = 'workspace 8'
-    alt-9 = 'workspace 9'
+    alt-1 = ['workspace 1', 'move-mouse window-lazy-center']
+    alt-2 = ['workspace 2', 'move-mouse window-lazy-center']
+    alt-3 = ['workspace 3', 'move-mouse window-lazy-center']
+    alt-4 = ['workspace 4', 'move-mouse window-lazy-center']
+    alt-5 = ['workspace 5', 'move-mouse window-lazy-center']
+    alt-6 = ['workspace 6', 'move-mouse window-lazy-center']
+    alt-7 = ['workspace 7', 'move-mouse window-lazy-center']
+    alt-8 = ['workspace 8', 'move-mouse window-lazy-center']
+    alt-9 = ['workspace 9', 'move-mouse window-lazy-center']
+    alt-0 = ['workspace 10', 'move-mouse window-lazy-center']
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     alt-shift-1 = 'move-node-to-workspace 1'
@@ -141,6 +142,7 @@ automatically-unhide-macos-hidden-apps = false
     alt-shift-7 = 'move-node-to-workspace 7'
     alt-shift-8 = 'move-node-to-workspace 8'
     alt-shift-9 = 'move-node-to-workspace 9'
+    alt-shift-0 = 'move-node-to-workspace 10'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
@@ -149,6 +151,19 @@ automatically-unhide-macos-hidden-apps = false
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
     alt-shift-semicolon = 'mode service'
+
+[workspace-to-monitor-force-assignment]
+    1 = 'main'
+    2 = 'main'
+    3 = 'main'
+    4 = 'main'
+    5 = 'main'
+
+    6 = ['secondary', 'main']
+    7 = ['secondary', 'main']
+    8 = ['secondary', 'main']
+    9 = ['secondary', 'main']
+    10 = ['secondary', 'main']
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -178,7 +193,15 @@ if.app-id = 'com.apple.finder'
 run = ['layout floating']
 
 [[on-window-detected]]
+if.app-id = 'com.apple.Notes'
+run = ['layout floating']
+
+[[on-window-detected]]
 if.app-id = 'com.apple.Passwords'
+run = ['layout floating']
+
+[[on-window-detected]]
+if.app-id = 'com.liguangming.Shadowrocket'
 run = ['layout floating']
 
 [[on-window-detected]]
@@ -195,7 +218,7 @@ run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
-run = ['layout floating', 'move-node-to-workspace 4']
+run = ['layout floating', 'move-node-to-workspace 2']
 
 [[on-window-detected]]
 if.app-id = 'ru.keepcoder.Telegram'
@@ -219,4 +242,4 @@ run = ['move-node-to-workspace 8']
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.VSCode'
-run = ['move-node-to-workspace 9']
+run = ['move-node-to-workspace 10']
