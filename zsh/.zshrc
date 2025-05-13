@@ -1,3 +1,34 @@
+# Start the TMUX session if not alraedy in the tmux session
+if [[ ! -n $TMUX  ]]; then
+  # Get the session IDs
+  session_ids="$(tmux list-sessions)"
+
+  # Create new session if no sessions exist
+  if [[ -z "$session_ids" ]]; then
+    tmux new-session
+  fi
+
+  # Select from following choices
+  #   - Attach existing session
+  #   - Create new session
+  #   - Start without tmux
+  create_new_session="Create new session"
+  start_without_tmux="Start without tmux"
+  choices="$session_ids\n${create_new_session}:\n${start_without_tmux}:"
+  choice="$(echo $choices | fzf | cut -d: -f1)"
+
+  if expr "$choice" : "[0-9]*$" >&/dev/null; then
+    # Attach existing session
+    tmux attach-session -t "$choice"
+  elif [[ "$choice" = "${create_new_session}" ]]; then
+    # Create new session
+    tmux new-session
+  elif [[ "$choice" = "${start_without_tmux}" ]]; then
+    # Start without tmux
+    :
+  fi
+fi
+
 # Exports
 unset RPROMPT
 export PROMPT="%F{green}%~ %F{normal}$ "
@@ -18,6 +49,13 @@ bindkey '\e\e[D' backward-word
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# History setup
+SAVEHIST=1000
+HISTSIZE=999
+setopt share_history
+setopt hist_expire_dups_first
+setopt hist_ignore_dups
+setopt hist_verify
 setopt EXTENDED_HISTORY
 
 # Completions
@@ -36,6 +74,10 @@ zstyle ':completion:*:messages' format '%d'
 zstyle ':completion:*:warnings' format "$fg[red]No matches for:$reset_color %d"
 zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
 zstyle :compinstall filename '/Users/k.fazilov/.zshrc'
+
+# Up / Down arrow history for current command
+bindkey "^[[A" history-search-backward
+bindkey "^[[B" history-search-forward
 
 # Shift-Tab
 bindkey '^[[Z' reverse-menu-complete
@@ -75,4 +117,4 @@ source <(fzf --zsh)
 
 export COLUMNS="120"
 
-export PATH="$PATH:/Users/k.fazilov/ACLI"
+export PATH="$PATH:/Users/k.fazilov/Dev/flutter/bin"
