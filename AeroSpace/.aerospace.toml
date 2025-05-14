@@ -168,11 +168,11 @@ run = ['layout floating']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.iCal'
-run = ['layout floating', 'move-node-to-workspace 2']
+run = ['move-node-to-workspace 2']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.reminders'
-run = ['layout floating', 'move-node-to-workspace 2']
+run = ['move-node-to-workspace 2']
 
 [[on-window-detected]]
 if.app-id = 'md.obsidian'
@@ -180,7 +180,7 @@ run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
-run = ['layout floating', 'move-node-to-workspace 2']
+run = ['move-node-to-workspace 2']
 
 [[on-window-detected]]
 if.app-id = 'ru.keepcoder.Telegram'
