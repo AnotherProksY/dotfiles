@@ -805,12 +805,13 @@ require('lazy').setup({
         highlight_overrides = {
           frappe = function(frappe)
             return {
-              LineNr = { fg = frappe.surface2 },
+              LineNr = { fg = frappe.text },
             }
           end,
         },
       }
       vim.cmd.colorscheme 'catppuccin-frappe'
+      vim.opt.fillchars = { eob = ' ' }
     end,
   },
 
