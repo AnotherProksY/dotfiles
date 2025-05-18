@@ -1,0 +1,14 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "created": "datetime",
+    "project": "multitext",
+    "due": "date",
+    "read": "checkbox",
+    "done reading": "date",
+    "start reading": "date",
+    "done date": "date"
+  }
+}

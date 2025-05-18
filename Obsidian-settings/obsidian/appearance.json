@@ -1,0 +1,15 @@
+{
+  "accentColor": "#7f6df2",
+  "translucency": false,
+  "cssTheme": "",
+  "showViewHeader": true,
+  "enabledCssSnippets": [
+    "hideAttachFolder",
+    "books"
+  ],
+  "interfaceFontFamily": "SF Pro",
+  "textFontFamily": "SF Pro",
+  "monospaceFontFamily": "SF Mono",
+  "showRibbon": false,
+  "baseFontSize": 16
+}

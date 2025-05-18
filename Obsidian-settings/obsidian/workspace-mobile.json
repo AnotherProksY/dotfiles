@@ -1,0 +1,264 @@
+{
+  "main": {
+    "id": "99b6316d88e40cf1",
+    "type": "split",
+    "children": [
+      {
+        "id": "b5640593586a7afa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5fd87269c9d69789",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🗒️ Home.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "🗒️ Home"
+            }
+          },
+          {
+            "id": "24e87dc84ffd9237",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ТО на Мерсе.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "ТО на Мерсе"
+            }
+          },
+          {
+            "id": "1a993b87e0b9c94f",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Продукты.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Продукты"
+            }
+          },
+          {
+            "id": "bbdfcda3fcbc68a9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Психология влияния. Как научиться убеждать и добиваться успеха - Роберт Б Чалдини.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Психология влияния. Как научиться убеждать и добиваться успеха - Роберт Б Чалдини"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e84eacf9857e3392",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "ceb0cbe4480ca819",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "byCreatedTime",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
+        }
+      },
+      {
+        "id": "a682a9225ed86139",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "tag:#business",
+            "matchingCase": true,
+            "explainSearch": false,
+            "collapseAll": true,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "afdb34898ea86ce0",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
+        }
+      },
+      {
+        "id": "92d327570db7b9d9",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      },
+      {
+        "id": "f7126905ccba0a31",
+        "type": "leaf",
+        "state": {
+          "type": "all-properties",
+          "state": {
+            "sortOrder": "frequency",
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-archive",
+          "title": "All properties"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "f2227aa54b8a83e8",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "f22b1d97a7865437",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "🗒️ Home.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "d8ae3b676e571715",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "🗒️ Home.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "a4149505b2924cba",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Психология влияния. Как научиться убеждать и добиваться успеха - Роберт Б Чалдини.md",
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      }
+    ],
+    "currentTab": 2
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "templates:Insert template": false,
+      "random-note:Open random note": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "bbdfcda3fcbc68a9",
+  "lastOpenFiles": [
+    "16-05-2025 Что было сделано за неделю?.md",
+    "Еженедельные отчеты по проделанной работе СКВ.md",
+    "ДИТ.md",
+    "🗒️ Home.md",
+    "Психология влияния. Как научиться убеждать и добиваться успеха - Роберт Б Чалдини.md",
+    "Untitled 2.md",
+    "Untitled 3.md",
+    "Книги.md",
+    "Продукты.md",
+    "Настроить sing-box глобально на весь роутер.md",
+    "Установка sing-box на openwrt.md",
+    "OfficialVPN.md",
+    "VLESS несколько серверов с одной подписки.md",
+    "Как поставить Zapret на OpenWRT.md",
+    "Инструкция по взлому и установки прошивки OfficialVPN на роутер Xiaomi AX300T.md",
+    "Untitled3.md",
+    "Рычаги влияния.md",
+    "Модель зафиксированных действий.md",
+    "Конфиг NGINX для проксирования на локалку.md",
+    "SSH Jump Server.md",
+    "Маппинг частых фраз в СТП - OfficialVPN.md",
+    "Топ роутеров для прошивки OpenWRT.md",
+    "ТО на Мерсе.md",
+    "Как создать свой Snapshot OpenWRT (на базе ACDEV).md",
+    "Настройка Mesh на OpenWRT.md",
+    "09-05-2025 Что было сделано за неделю?.md",
+    "attachments/attach_вишлист_03-11-2024_14-41.jpeg",
+    "attachments/attach_вишлист_03-11-2024_14-41.png",
+    "Стратегия и план.canvas",
+    "Templates",
+    "5- Recipes",
+    "3 - Projects/1 - Cow Vill/Стратегия и план.canvas",
+    "attachments/ТКП GlowByte тренинги  Superset 2022_v01.pdf",
+    "attachments/Упражнения в домашних условиях 1.jpeg",
+    "attachments/Упражнения в домашних условиях.jpeg",
+    "attachments/Cow Vill — Desktop (upd).pdf",
+    "attachments/IMG_6121.jpeg",
+    "4. Canvas/Cow Vill Стратегия и план.canvas"
+  ]
+}
