@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rsync ~/.ssh/* ~/Library/Mobile\ Documents/com~apple~CloudDocs/SSH\ Configs/
+rsync -avh --delete-after ~/.ssh/ ~/Library/Mobile\ Documents/com~apple~CloudDocs/SSH\ Configs/
