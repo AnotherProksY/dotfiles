@@ -803,14 +803,14 @@ require('lazy').setup({
         background = {
           dark = 'frappe',
         },
-        transparent_background = true,
-        highlight_overrides = {
-          frappe = function(frappe)
-            return {
-              LineNr = { fg = frappe.text },
-            }
-          end,
-        },
+        -- transparent_background = true,
+        -- highlight_overrides = {
+        --   frappe = function(frappe)
+        --     return {
+        --       LineNr = { fg = frappe.text },
+        --     }
+        --   end,
+        -- },
       }
       vim.cmd.colorscheme 'catppuccin-frappe'
       vim.opt.fillchars = { eob = ' ' }
