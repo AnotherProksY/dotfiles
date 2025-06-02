@@ -42,6 +42,7 @@ brew install --casks tableplus telegram appcleaner discord docker boop imazing v
 12. [WhatsApp](https://apps.apple.com/ru/app/whatsapp-desktop/id1147396723?l=en&mt=12)
 13. [Outline](https://apps.apple.com/ru/app/outline-secure-internet-access/id1356178125?l=en-GB&mt=12)
 14. [Exporter](https://apps.apple.com/ru/app/exporter/id1099120373?l=en-GB&mt=12)
+15. [Amphetamine](https://apps.apple.com/ru/app/amphetamine/id937984704?l=en-GB&mt=12)
 
 ## Pyenv
 
