@@ -15,6 +15,9 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('v', '<', '<gv', { desc = 'Un-indent line' })
 vim.keymap.set('v', '>', '>gv', { desc = 'Indent line' })
 
+-- Copy to OS clipboard
+vim.keymap.set('v', '<C-y>', '"+y<CR>', { silent = true })
+
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
