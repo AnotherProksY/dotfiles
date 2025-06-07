@@ -11,11 +11,22 @@ return {
   },
   cmd = 'Neotree',
   keys = {
-    { '\\', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
+    { '\\', ':Neotree reveal left<CR>', desc = 'NeoTree reveal', silent = true },
   },
   opts = {
+    default_component_configs = {
+      indent = {
+        with_expanders = true,
+        with_markers = false,
+        expander_collapsed = '',
+        expander_expanded = '',
+        expander_highlight = 'NeoTreeExpander',
+      },
+    },
+    close_if_last_window = true,
     filesystem = {
       window = {
+        position = 'current',
         mappings = {
           ['\\'] = 'close_window',
         },
