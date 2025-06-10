@@ -1,5 +1,26 @@
+# Change Alacritty color after login sync with system theme
+if [ "$ALACRITTY" = "true" ]
+then
+  theme() {
+    cat $HOME/.config/alacritty/$1.toml > $HOME/.config/alacritty/active-theme.toml
+  }
+  tmux-theme() {
+    echo "set -g @catppuccin_flavor '$1'" > .config/tmux/theme.conf
+  }
+  local ALACRITTY_THEME=$(defaults read -g AppleInterfaceStyle 2>/dev/null || echo "Light")
+  if [ "$ALACRITTY_THEME" = "Dark" ]
+  then
+    theme "catppuccin-frappe"
+    tmux-theme "frappe"
+  else
+    theme "catppuccin-latte"
+    tmux-theme "latte"
+  fi
+fi
+
 # Start the TMUX session if not alraedy in the tmux session
-if [[ ! -n $TMUX  ]]; then
+# Only for Alacritty terminal!
+if [[ ! -n $TMUX ]] && [ "$ALACRITTY" = "true" ]; then
   # Get the session IDs
   session_ids="$(tmux list-sessions)"
 

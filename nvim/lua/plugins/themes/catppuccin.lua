@@ -6,8 +6,8 @@ return {
   priority = 1000,
   init = function()
     require('catppuccin').setup {
-      flavour = 'frappe',
       background = {
+        light = 'latte',
         dark = 'frappe',
       },
       default_integrations = true,
@@ -21,7 +21,7 @@ return {
         },
         mini = {
           enabled = true,
-          indentscope_color = 'frappe',
+          -- indentscope_color = 'latte',
         },
         telescope = {
           enabled = true,
@@ -29,17 +29,8 @@ return {
         },
       },
       transparent_background = true,
-      highlight_overrides = {
-        frappe = function(frappe)
-          return {
-            LineNr = { fg = frappe.subtext0 },
-            WinSeparator = { fg = frappe.overlay0 },
-            NeoTreeWinSeparator = { fg = frappe.overlay0 },
-          }
-        end,
-      },
     }
-    vim.cmd.colorscheme 'catppuccin-frappe'
+    vim.cmd.colorscheme 'catppuccin'
     vim.opt.fillchars = { eob = ' ' }
   end,
 }
