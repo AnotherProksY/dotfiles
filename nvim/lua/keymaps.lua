@@ -18,7 +18,11 @@ vim.keymap.set('v', '>', '>gv', { desc = 'Indent line' })
 -- Copy to OS clipboard
 vim.keymap.set('v', '<C-y>', '"+y<CR>', { silent = true })
 
+-- Show diagnostic window
 vim.keymap.set('n', 'gh', vim.diagnostic.open_float, { desc = 'Line Diagnostics' })
+
+-- Paste without changing paste register
+vim.keymap.set('x', '<C-p>', '"_dP')
 
 -- Diagnostic keymaps
 -- vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
