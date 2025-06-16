@@ -15,6 +15,14 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('v', '<', '<gv', { desc = 'Un-indent line' })
 vim.keymap.set('v', '>', '>gv', { desc = 'Indent line' })
 
+-- Always go zz when doing Page up / Page down
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+
+-- Centered search
+vim.keymap.set('n', 'n', 'nzzzv')
+vim.keymap.set('n', 'N', 'Nzzzv')
+
 -- Copy to OS clipboard
 vim.keymap.set('v', '<C-y>', '"+y<CR>', { silent = true })
 
