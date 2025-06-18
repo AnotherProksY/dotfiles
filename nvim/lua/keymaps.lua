@@ -7,6 +7,10 @@ vim.g.maplocalleader = ' '
 -- Map Esc to double Control
 vim.keymap.set('i', 'jj', '<Esc>')
 
+-- Map j/k to do gj/gk to easily navigate in wraped lines
+vim.keymap.set('n', 'j', 'gj')
+vim.keymap.set('n', 'k', 'gk')
+
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
