@@ -19,6 +19,7 @@ require 'autocommands'
 require('lazy').setup({
   { import = 'plugins' },
   { import = 'plugins.LSP' },
+  { import = 'plugins.llm' },
   { import = 'plugins.helpers' },
   { import = 'plugins.themes' },
 }, {
