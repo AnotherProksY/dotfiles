@@ -7,7 +7,7 @@ return {
   init = function()
     require('tabline').setup {
       show_icon = true,
-      show_index = false,
+      show_index = true,
       modify_indicator = ' 󱗓',
       brackets = { '', '' },
     }
