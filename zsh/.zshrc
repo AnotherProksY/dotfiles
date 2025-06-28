@@ -1,6 +1,7 @@
 # Change Alacritty color after login sync with system theme
 if [ "$ALACRITTY" = "true" ]
 then
+  export ANTHROPIC_API_KEY=<ENTER YOUR KEY>
   theme() {
     cat $HOME/.config/alacritty/$1.toml > $HOME/.config/alacritty/active-theme.toml
   }

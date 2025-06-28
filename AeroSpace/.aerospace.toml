@@ -168,6 +168,10 @@ if.app-id = 'com.liguangming.Shadowrocket'
 run = ['layout floating']
 
 [[on-window-detected]]
+if.app-id = 'com.apple.MobileSMS'
+run = ['layout floating']
+
+[[on-window-detected]]
 if.app-id = 'com.apple.iCal'
 run = ['move-node-to-workspace 2']
 
