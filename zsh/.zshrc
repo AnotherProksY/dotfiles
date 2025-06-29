@@ -5,17 +5,12 @@ then
   theme() {
     cat $HOME/.config/alacritty/$1.toml > $HOME/.config/alacritty/active-theme.toml
   }
-  tmux-theme() {
-    echo "set -g @catppuccin_flavor '$1'" > .config/tmux/theme.conf
-  }
   local ALACRITTY_THEME=$(defaults read -g AppleInterfaceStyle 2>/dev/null || echo "Light")
   if [ "$ALACRITTY_THEME" = "Dark" ]
   then
     theme "catppuccin-frappe"
-    tmux-theme "frappe"
   else
     theme "catppuccin-latte"
-    tmux-theme "latte"
   fi
 fi
 
