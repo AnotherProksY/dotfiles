@@ -8,7 +8,7 @@ return {
     require('tabline').setup {
       show_icon = true,
       show_index = true,
-      modify_indicator = ' 󱗓',
+      modify_indicator = ' [+]',
       brackets = { '', '' },
     }
   end,

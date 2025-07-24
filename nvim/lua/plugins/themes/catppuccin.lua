@@ -25,7 +25,7 @@ return {
         },
         telescope = {
           enabled = true,
-          style = 'nvchad',
+          style = 'nvchad_outlined',
         },
       },
       transparent_background = true,
