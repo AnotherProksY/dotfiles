@@ -47,4 +47,6 @@ filetype plugin on
 filetype indent on
 
 " Colors
-colorscheme unokai
+colorscheme koehler
+set background=dark
+" hi Comment ctermfg=darkgray
