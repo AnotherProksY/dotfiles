@@ -47,5 +47,4 @@ filetype plugin on
 filetype indent on
 
 " Colors
-colorscheme default
-hi Comment ctermfg=darkgray
+colorscheme unokai
