@@ -53,7 +53,7 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 export PATH=~/bin:/opt/homebrew/bin:/opt/homebrew/sbin:~/.pyenv/bin:/opt/homebrew/opt/openjdk@11/bin:$PATH
 export FPATH=/opt/homebrew/share/zsh/site-functions:$FPATH
-export EDITOR=vim
+export EDITOR=nvim
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export PASSWORD_STORE_ENABLE_EXTENSIONS=true
@@ -100,7 +100,7 @@ bindkey "^[[B" history-search-forward
 bindkey '^[[Z' reverse-menu-complete
 
 # Aliases
-alias vim='nvim'
+alias n='nvim'
 alias dev='cd /Users/k.fazilov/Dev;ls'
 alias ls='ls -GF'
 alias l='ls -GFla'
