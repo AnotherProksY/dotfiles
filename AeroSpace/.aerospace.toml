@@ -9,7 +9,9 @@ after-login-command = []
 # You can use it to add commands that run after AeroSpace startup.
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = []
+after-startup-command = [
+    'exec-and-forget borders active_color=0xffcba6f7 inactive_color=0x00000000 width=5.0'
+]
 
 # Start AeroSpace at login
 start-at-login = true
@@ -184,15 +186,15 @@ if.app-id = 'com.apple.reminders'
 run = ['move-node-to-workspace 2']
 
 [[on-window-detected]]
+if.app-id = 'ru.keepcoder.Telegram'
+run = ['move-node-to-workspace 2']
+
+[[on-window-detected]]
 if.app-id = 'md.obsidian'
 run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
-run = ['move-node-to-workspace 4']
-
-[[on-window-detected]]
-if.app-id = 'ru.keepcoder.Telegram'
 run = ['move-node-to-workspace 4']
 
 [[on-window-detected]]

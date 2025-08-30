@@ -51,7 +51,7 @@ unset RPROMPT
 export PROMPT="%F{green}%~ %F{normal}$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
-export PATH=~/bin:/opt/homebrew/bin:/opt/homebrew/sbin:~/.pyenv/bin:/opt/homebrew/opt/openjdk@11/bin:$PATH
+export PATH=~/bin:/opt/homebrew/bin:/opt/homebrew/sbin:~/.pyenv/bin:$PATH
 export FPATH=/opt/homebrew/share/zsh/site-functions:$FPATH
 export EDITOR=nvim
 export LC_ALL=en_US.UTF-8

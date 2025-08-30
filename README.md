@@ -15,8 +15,9 @@ Formula:
 brew tap beeftornado/rmtree
 brew tap epk/epk
 brew tap shaunsingh/SFMono-Nerd-Font-Ligaturized
+brew tap FelixKratz/formulae
 
-brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh vim nmap mczachurski/wallpapper/wallpapper git-lfs ripgrep nvim npm lazygit diff-so-fancy
+brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh vim nmap mczachurski/wallpapper/wallpapper git-lfs ripgrep nvim npm lazygit diff-so-fancy borders
 /usr/local/opt/fzf/install
 ```
 
