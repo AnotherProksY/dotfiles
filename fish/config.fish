@@ -1,5 +1,7 @@
+# Necessary Fish Bindings
 set fish_greeting
 set -g fish_key_bindings fish_vi_key_bindings
+bind -M insert \cf accept-autosuggestion
 
 # Change Alacritty color after login sync with system theme
 if test "$ALACRITTY" = "true"
