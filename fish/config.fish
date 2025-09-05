@@ -2,6 +2,7 @@
 set fish_greeting
 set -g fish_key_bindings fish_vi_key_bindings
 bind -M insert \cf accept-autosuggestion
+bind -M insert alt-backspace backward-kill-word
 
 # Change Alacritty color after login sync with system theme
 if test "$ALACRITTY" = "true"
@@ -11,7 +12,7 @@ if test "$ALACRITTY" = "true"
         cat $HOME/.config/alacritty/$argv[1].toml > $HOME/.config/alacritty/active-theme.toml
     end
 
-    set ALACRITTY_THEME (defaults read -g AppleInterfaceStyle ^/dev/null; or echo "Light")
+    set ALACRITTY_THEME (defaults read -g AppleInterfaceStyle 2>/dev/null; or echo "Light")
 
     if test "$ALACRITTY_THEME" = "Dark"
         theme "catppuccin-frappe"
