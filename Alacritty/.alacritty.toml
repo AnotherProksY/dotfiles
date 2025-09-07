@@ -2,6 +2,10 @@
 TERM = "xterm-256color"
 ALACRITTY = "true"
 
+[terminal.shell]
+program = "/opt/homebrew/bin/fish"
+args = ["--login"]
+
 [window]
 padding.x = 10
 padding.y = 10

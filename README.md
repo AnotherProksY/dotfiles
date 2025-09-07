@@ -17,14 +17,14 @@ brew tap epk/epk
 brew tap shaunsingh/SFMono-Nerd-Font-Ligaturized
 brew tap FelixKratz/formulae
 
-brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh vim nmap mczachurski/wallpapper/wallpapper git-lfs ripgrep nvim npm lazygit diff-so-fancy borders
+brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh vim nmap mczachurski/wallpapper/wallpapper git-lfs ripgrep neovim npm lazygit diff-so-fancy borders fish
 /usr/local/opt/fzf/install
 ```
 
 Casks:
 
 ```bash
-brew install --casks tableplus telegram appcleaner discord docker boop imazing visual-studio-code maccy spotify figma obsidian the-unarchiver httpie font-sf-mono-nerd-font-ligaturized alacritty proxyman google-chrome mongodb-compass nikitabobko/tap/aerospace ngrok bitwarden
+brew install --casks tableplus telegram appcleaner discord docker docker-desktop boop imazing visual-studio-code maccy spotify figma obsidian the-unarchiver httpie font-sf-mono-nerd-font-ligaturized alacritty proxyman google-chrome mongodb-compass nikitabobko/tap/aerospace ngrok bitwarden bettermouse chatgpt
 ```
 
 ## Другие программы
