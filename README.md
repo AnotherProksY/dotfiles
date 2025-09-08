@@ -45,6 +45,10 @@ brew install --casks tableplus telegram appcleaner discord docker docker-desktop
 14. [Exporter](https://apps.apple.com/ru/app/exporter/id1099120373?l=en-GB&mt=12)
 15. [Amphetamine](https://apps.apple.com/ru/app/amphetamine/id937984704?l=en-GB&mt=12)
 
+## Better Mouse
+
+Файл конфигурации лежит в директории `MX-Master-3S`
+
 ## Pyenv
 
 ```bash
