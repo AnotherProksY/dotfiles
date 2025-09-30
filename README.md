@@ -44,6 +44,7 @@ brew install --casks tableplus telegram appcleaner discord docker docker-desktop
 13. [Outline](https://apps.apple.com/ru/app/outline-secure-internet-access/id1356178125?l=en-GB&mt=12)
 14. [Exporter](https://apps.apple.com/ru/app/exporter/id1099120373?l=en-GB&mt=12)
 15. [Amphetamine](https://apps.apple.com/ru/app/amphetamine/id937984704?l=en-GB&mt=12)
+16. [Todoist](https://apps.apple.com/ru/app/todoist-to-do-list-calendar/id585829637?l=en-GB&mt=12)
 
 ## Better Mouse
 

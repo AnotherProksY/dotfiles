@@ -182,7 +182,7 @@ if.app-id = 'com.apple.iCal'
 run = ['move-node-to-workspace 2']
 
 [[on-window-detected]]
-if.app-id = 'com.apple.reminders'
+if.app-id = 'com.todoist.mac.Todoist'
 run = ['move-node-to-workspace 2']
 
 [[on-window-detected]]
