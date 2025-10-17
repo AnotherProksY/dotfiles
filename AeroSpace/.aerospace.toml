@@ -11,6 +11,7 @@ after-login-command = []
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
     # 'exec-and-forget borders active_color=0xffcba6f7 inactive_color=0x00000000 width=7.0'
+    'layout tiles'
 ]
 
 # Start AeroSpace at login
@@ -175,6 +176,10 @@ run = ['layout floating']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.MobileSMS'
+run = ['layout floating']
+
+[[on-window-detected]]
+if.app-id = 'com.apple.AddressBook'
 run = ['layout floating']
 
 [[on-window-detected]]
