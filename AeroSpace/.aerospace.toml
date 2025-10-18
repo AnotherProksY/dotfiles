@@ -64,7 +64,8 @@ automatically-unhide-macos-hidden-apps = true
     # Custom command
     alt-f = 'fullscreen'
     alt-shift-f = 'macos-native-fullscreen'
-    alt-shift-enter = 'exec-and-forget open -n /Volumes/Macintosh\ HD/Applications/Alacritty.app'
+    # alt-shift-enter = 'exec-and-forget open -n /Volumes/Macintosh\ HD/Applications/Alacritty.app'
+    alt-shift-enter = 'exec-and-forget open -n /Volumes/Macintosh\ HD/System/Applications/Utilities/Terminal.app'
     alt-cmd-f = 'layout floating tiling'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
