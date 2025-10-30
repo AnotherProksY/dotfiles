@@ -17,7 +17,7 @@ brew tap epk/epk
 brew tap shaunsingh/SFMono-Nerd-Font-Ligaturized
 brew tap FelixKratz/formulae
 
-brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh vim nmap mczachurski/wallpapper/wallpapper git-lfs ripgrep neovim npm lazygit diff-so-fancy fish
+brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh vim nmap mczachurski/wallpapper/wallpapper git-lfs ripgrep neovim npm lazygit diff-so-fancy fish block-goose-cli
 /usr/local/opt/fzf/install
 ```
 
