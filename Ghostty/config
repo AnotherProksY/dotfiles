@@ -1,0 +1,22 @@
+# Base
+title = ""
+shell-integration = fish
+cursor-click-to-move = true
+mouse-hide-while-typing = true
+env=TERM=xterm-256color
+link-url = true
+
+# Font
+font-family = Liga SFMono Nerd Font
+font-size = 18
+
+# Theme
+macos-titlebar-style = hidden
+theme = light:Catppuccin Latte,dark:Catppuccin Frappe
+background-blur = true
+background-opacity = 0.8
+macos-icon = blueprint
+
+# Paddings
+window-padding-x = 10
+window-padding-y = 10

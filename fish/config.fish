@@ -1,3 +1,10 @@
+# Necessary Fish ENVs
+set -x PATH ~/bin /opt/homebrew/bin /opt/homebrew/sbin ~/.pyenv/bin $PATH
+set -x EDITOR nvim
+set -x LC_ALL en_US.UTF-8
+set -x LANG en_US.UTF-8
+set -x PASSWORD_STORE_ENABLE_EXTENSIONS true
+
 # Necessary Fish Bindings
 set fish_greeting
 set -g fish_key_bindings fish_vi_key_bindings
@@ -23,7 +30,8 @@ end
 
 # Start the TMUX session if not already in the tmux session
 # Only for Alacritty terminal!
-if not set -q TMUX; and test "$ALACRITTY" = "true"
+# if not set -q TMUX; and test "$ALACRITTY" = "true"
+if not set -q TMUX
     # Get the session IDs
     set session_ids (tmux list-sessions)
 
@@ -63,17 +71,11 @@ function fish_prompt
     echo -n ' $ '
 end
 
-set -x PATH ~/bin /opt/homebrew/bin /opt/homebrew/sbin ~/.pyenv/bin $PATH
-set -x EDITOR nvim
-set -x LC_ALL en_US.UTF-8
-set -x LANG en_US.UTF-8
-set -x PASSWORD_STORE_ENABLE_EXTENSIONS true
-
 status --is-interactive; and pyenv init - | source
 status --is-interactive; and pyenv virtualenv-init - | source
 
 # Aliases / functions
-alias n nvim
+alias vim nvim
 alias dev 'cd /Users/k.fazilov/Dev; ls'
 alias ls 'ls -GF'
 alias l 'ls -GFla'

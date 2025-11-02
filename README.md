@@ -24,7 +24,7 @@ brew install --formula tree git htop tmux ctags fzf bat telnet httpie mosh vim n
 Casks:
 
 ```bash
-brew install --casks tableplus telegram appcleaner discord docker docker-desktop boop imazing visual-studio-code maccy spotify figma obsidian the-unarchiver httpie font-sf-mono-nerd-font-ligaturized alacritty proxyman google-chrome mongodb-compass nikitabobko/tap/aerospace ngrok bitwarden bettermouse chatgpt tsh cursor-cli alcove
+brew install --casks tableplus telegram appcleaner discord docker docker-desktop boop imazing visual-studio-code maccy spotify figma obsidian the-unarchiver httpie font-sf-mono-nerd-font-ligaturized alacritty proxyman google-chrome mongodb-compass nikitabobko/tap/aerospace ngrok bitwarden bettermouse chatgpt tsh cursor-cli alcove ghostty
 ```
 
 ## Другие программы
@@ -74,4 +74,10 @@ auth     sufficient   pam_tid.so
 
 # Сделать "wq!" внутри Vim
 # Перезайти в терминал (удалить tmux сессию + перезапустить Terminal.app)
+```
+
+## Включить опцию для перемещения окон через CTRL+CMD+MOUSE
+
+```bash
+defaults write -g NSWindowShouldDragOnGesture -bool true
 ```
