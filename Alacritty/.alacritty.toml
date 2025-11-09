@@ -15,20 +15,20 @@ decorations = "Buttonless"
 opacity = 0.8
 blur = true
 
-# option_as_alt = "Both"
+option_as_alt = "Both"
 
 [mouse]
 hide_when_typing = true
 
 [font]
 normal.family = "Liga SFMono Nerd Font"
-
 size=18
 
 [keyboard]
 bindings = [
-  { key = "Right", mods = "Alt", chars = "\u001BF" },
-  { key = "Left",  mods = "Alt", chars = "\u001BB" },
+  { key = "Right", mods = "Command", chars = "\u001B[F" },
+  { key = "Left",  mods = "Command", chars = "\u001B[H" },
+  { key = "Backspace",  mods = "Command", chars = "\u0015" },
 ]
 
 [general]
