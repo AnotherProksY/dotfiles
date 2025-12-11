@@ -44,6 +44,8 @@ brew install --casks tableplus telegram appcleaner discord docker docker-desktop
 10. [WhatsApp](https://apps.apple.com/ru/app/whatsapp-desktop/id1147396723?l=en&mt=12)
 11. [Amphetamine](https://apps.apple.com/ru/app/amphetamine/id937984704?l=en-GB&mt=12)
 12. [Klack](https://apps.apple.com/ru/app/klack/id6446206067?l=en-GB&mt=12Klack)
+13. [iA Writer](https://ia.net/writer)
+14. [iA Presenter](https://ia.net/presenter)
 
 ## Better Mouse
 
