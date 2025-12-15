@@ -172,6 +172,10 @@ if.app-id = 'com.apple.Passwords'
 run = ['layout floating']
 
 [[on-window-detected]]
+if.app-id = 'pro.writer.mac'
+run = ['layout floating']
+
+[[on-window-detected]]
 if.app-id = 'com.liguangming.Shadowrocket'
 run = ['layout floating']
 
