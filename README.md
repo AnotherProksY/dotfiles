@@ -46,6 +46,7 @@ brew install --casks tableplus telegram appcleaner discord docker docker-desktop
 12. [Klack](https://apps.apple.com/ru/app/klack/id6446206067?l=en-GB&mt=12Klack)
 13. [iA Writer](https://ia.net/writer)
 14. [iA Presenter](https://ia.net/presenter)
+15. [Calendr](https://github.com/pakerwreah/Calendr/releases)
 
 ## Better Mouse
 
