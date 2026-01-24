@@ -1,18 +1,18 @@
 -- Catppuccin
 
 return {
-  'catppuccin/nvim',
-  name = 'catppuccin',
+  "catppuccin/nvim",
+  name = "catppuccin",
   priority = 1000,
   init = function()
-    require('catppuccin').setup {
+    require("catppuccin").setup {
       background = {
-        light = 'latte',
-        dark = 'frappe',
+        light = "latte",
+        dark = "frappe",
       },
       default_integrations = true,
       integrations = {
-        fidget = true,
+        -- fidget = true,
         mason = true,
         which_key = true,
         gitsigns = {
@@ -25,12 +25,12 @@ return {
         },
         telescope = {
           enabled = true,
-          style = 'nvchad_outlined',
+          style = "nvchad_outlined",
         },
       },
-      transparent_background = true,
+      transparent_background = false,
     }
-    vim.cmd.colorscheme 'catppuccin'
-    vim.opt.fillchars = { eob = ' ' }
+    vim.cmd.colorscheme "catppuccin"
+    vim.opt.fillchars = { eob = " " }
   end,
 }

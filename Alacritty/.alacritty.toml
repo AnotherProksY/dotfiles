@@ -12,8 +12,8 @@ padding.y = 10
 
 decorations = "Buttonless"
 
-opacity = 0.8
-blur = true
+# opacity = 0.8
+# blur = true
 
 option_as_alt = "Both"
 
