@@ -66,6 +66,8 @@ automatically-unhide-macos-hidden-apps = true
     alt-shift-f = 'macos-native-fullscreen'
     alt-shift-enter = 'exec-and-forget open -n /Volumes/Macintosh\ HD/Applications/Alacritty.app'
     alt-shift-q = '''exec-and-forget SKIP_TMUX_PROMPT=1 open -n /Volumes/Macintosh\ HD/Applications/Alacritty.app --args \
+                        -o "window.dimensions.columns=40" \
+                        -o "window.dimensions.lines=24" \
                         --title quick-note \
                         -e fish -c '
                           oo;
@@ -78,6 +80,8 @@ automatically-unhide-macos-hidden-apps = true
                         '
     '''
     alt-shift-o = '''exec-and-forget SKIP_TMUX_PROMPT=1 open -n /Volumes/Macintosh\ HD/Applications/Alacritty.app --args \
+                        -o "window.dimensions.columns=65" \
+                        -o "window.dimensions.lines=30" \
                         --title quick-note \
                         -e fish -c '
                           oo;
@@ -250,4 +254,4 @@ run = ['move-node-to-workspace 10']
 if.app-id = 'org.alacritty'
 if.window-title-regex-substring = 'quick-note'
 check-further-callbacks = true
-run = ['layout floating', 'resize width 60', 'resize height 24']
+run = ['layout floating']
