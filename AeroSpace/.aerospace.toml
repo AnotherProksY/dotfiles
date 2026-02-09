@@ -65,6 +65,25 @@ automatically-unhide-macos-hidden-apps = true
     alt-f = 'fullscreen'
     alt-shift-f = 'macos-native-fullscreen'
     alt-shift-enter = 'exec-and-forget open -n /Volumes/Macintosh\ HD/Applications/Alacritty.app'
+    alt-shift-q = '''exec-and-forget SKIP_TMUX_PROMPT=1 open -n /Volumes/Macintosh\ HD/Applications/Alacritty.app --args \
+                        --title quick-note \
+                        -e fish -c '
+                          oo;
+                          set fname (date "+Черновик_%d-%m-%Y_%H:%M:%S.md");
+                          touch $fname;
+                          cat ./Templates/Заметка.md > $fname;
+                          set now (date "+%Y-%m-%dT%H:%M");
+                          sed -i "" "s/{{current_date}}/$now/" $fname;
+                          vim $fname
+                        '
+    '''
+    alt-shift-o = '''exec-and-forget SKIP_TMUX_PROMPT=1 open -n /Volumes/Macintosh\ HD/Applications/Alacritty.app --args \
+                        --title quick-note \
+                        -e fish -c '
+                          oo;
+                          vim .
+                        '
+    '''
     # alt-shift-enter = 'exec-and-forget open -n /Volumes/Macintosh\ HD/System/Applications/Utilities/Terminal.app'
     alt-cmd-f = 'layout floating tiling'
 
@@ -226,3 +245,9 @@ run = ['move-node-to-workspace 8']
 [[on-window-detected]]
 if.app-id = 'com.microsoft.VSCode'
 run = ['move-node-to-workspace 10']
+
+[[on-window-detected]]
+if.app-id = 'org.alacritty'
+if.window-title-regex-substring = 'quick-note'
+check-further-callbacks = true
+run = ['layout floating', 'resize width 60', 'resize height 24']
