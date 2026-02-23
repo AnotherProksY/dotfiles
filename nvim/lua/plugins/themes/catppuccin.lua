@@ -28,7 +28,7 @@ return {
           style = "nvchad_outlined",
         },
       },
-      transparent_background = false,
+      transparent_background = true,
     }
     vim.cmd.colorscheme "catppuccin"
     vim.opt.fillchars = { eob = " " }

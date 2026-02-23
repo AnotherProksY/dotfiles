@@ -64,31 +64,10 @@ automatically-unhide-macos-hidden-apps = true
     # Custom command
     alt-f = 'fullscreen'
     alt-shift-f = 'macos-native-fullscreen'
-    alt-shift-enter = 'exec-and-forget open -n /Volumes/Macintosh\ HD/Applications/Alacritty.app'
-    alt-shift-q = '''exec-and-forget SKIP_TMUX_PROMPT=1 open -n /Volumes/Macintosh\ HD/Applications/Alacritty.app --args \
-                        -o "window.dimensions.columns=40" \
-                        -o "window.dimensions.lines=24" \
-                        --title quick-note \
-                        -e fish -c '
-                          oo;
-                          set fname (date "+Черновик_%d-%m-%Y_%H:%M:%S.md");
-                          touch $fname;
-                          cat ./Templates/Заметка.md > $fname;
-                          set now (date "+%Y-%m-%dT%H:%M");
-                          sed -i "" "s/{{current_date}}/$now/" $fname;
-                          vim $fname
-                        '
-    '''
-    alt-shift-o = '''exec-and-forget SKIP_TMUX_PROMPT=1 open -n /Volumes/Macintosh\ HD/Applications/Alacritty.app --args \
-                        -o "window.dimensions.columns=65" \
-                        -o "window.dimensions.lines=30" \
-                        --title quick-note \
-                        -e fish -c '
-                          oo;
-                          vim .
-                        '
-    '''
-    # alt-shift-enter = 'exec-and-forget open -n /Volumes/Macintosh\ HD/System/Applications/Utilities/Terminal.app'
+    # alt-shift-enter = 'exec-and-forget open -n /Volumes/Macintosh\ HD/Applications/Alacritty.app'
+    alt-shift-q = 'exec-and-forget shortcuts run "Create Note"'
+    alt-shift-o = 'exec-and-forget shortcuts run "Search Notes"'
+    alt-shift-enter = 'exec-and-forget open -n /Volumes/Macintosh\ HD/System/Applications/Utilities/Terminal.app'
     alt-cmd-f = 'layout floating tiling'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout

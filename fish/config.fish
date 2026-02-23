@@ -7,14 +7,17 @@ set -x PASSWORD_STORE_ENABLE_EXTENSIONS true
 
 # Necessary Fish Bindings
 set fish_greeting
-set -g fish_key_bindings fish_vi_key_bindings
-bind -M insert \cf accept-autosuggestion
-bind -M insert alt-backspace backward-kill-word
+# set -g fish_key_bindings fish_vi_key_bindings <-- VI Mode
+
+# Key bindings
+bind \cf accept-autosuggestion
+bind alt-backspace backward-kill-word
+# bind super-backspace backward-kill-line
+# bind super-left beginning-of-line
+# bind super-right end-of-line
 
 # Change Alacritty color after login sync with system theme
 if test "$ALACRITTY" = "true"
-    set -x ANTHROPIC_API_KEY <ENTER YOUR KEY>
-
     function theme
         cat $HOME/.config/alacritty/$argv[1].toml > $HOME/.config/alacritty/active-theme.toml
     end
@@ -31,7 +34,8 @@ end
 # Start the TMUX session if not already in the tmux session
 # Only for Alacritty terminal!
 # if not set -q TMUX; and test "$ALACRITTY" = "true"
-if not set -q TMUX
+# Skip если SKIP_TMUX_PROMPT=1
+if not set -q SKIP_TMUX_PROMPT; and not set -q TMUX
     # Get the session IDs
     set session_ids (tmux list-sessions)
 
@@ -90,8 +94,9 @@ function fzf
     command fzf --preview "([[ -f {} ]] && (bat --style=numbers --color=always {} || cat {})) || ([[ -d {} ]] && (tree -C {} | less)) || echo {} 2>/dev/null | head -200"
 end
 
+alias router 'ssh -L 8888:5.35.114.150:80 rasp'
 alias lg lazygit
-alias oo 'cd /Users/k.fazilov/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents/Second\ Brain'
+alias oo 'cd /Users/k.fazilov/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents'
 
 # Git aliases
 alias gita 'git add .'
