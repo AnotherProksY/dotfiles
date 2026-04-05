@@ -1,0 +1,57 @@
+{
+  "inbounds": [
+    {
+      "auto_route": false,
+      "domain_strategy": "ipv4_only",
+      "inet4_address": "172.16.250.1/30",
+      "interface_name": "tun0",
+      "sniff": true,
+      "strict_route": false,
+      "type": "tun"
+    }
+  ],
+  "log": {
+    "level": "debug"
+  },
+  "outbounds": [
+    {
+      "domain_strategy": "",
+      "flow": "xtls-rprx-vision",
+      "packet_encoding": "",
+      "server": "router-2.tgvpnbot.com",
+      "server_port": 443,
+      "tag": "Kamil-Router",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "iHwjVTDKubEaWDQjOTtjJWemHRiTk1c0OQnltidMTzU",
+          "short_id": "b69325fe35"
+        },
+        "server_name": "selectel.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "type": "vless",
+      "uuid": "8c25c2f7-fe8b-4a25-81cf-4ff401d9cc00"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "bypass",
+      "type": "direct"
+    },
+    {
+      "tag": "block",
+      "type": "block"
+    },
+    {
+      "tag": "dns-out",
+      "type": "dns"
+    }
+  ]
+}

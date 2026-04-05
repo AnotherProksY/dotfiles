@@ -1,0 +1,48 @@
+config ipset
+	list name 'vpn_domains'
+	option table_family 'inet'
+	list domain 'whatismyipaddress.com'
+	list domain 'speedtest.net'
+	list domain 'jira.tgvpnbot.com'
+	list domain 'superset.tgvpnbot.com'
+	list domain 'airflow.tgvpnbot.com'
+	list domain 'grafana.tgvpnbot.com'
+	list domain 'prometheus.tgvpnbot.com'
+	list domain 'outlook.com'
+	list domain 'marketplace.atlassian.com'
+	list domain 'hitvpn.app'
+	list domain 'deepl.com'
+	list domain 'sentry.io'
+	list domain 'remnawave.tgvpnbot.com'
+	list domain 'ansible.officialbot.org'
+	list domain 'baserow.io'
+	list domain 'zabbix.tgvpnbot.com'
+	list domain 'test-remnawave.tgvpnbot.com'
+	list domain 'ofvp.omnidesk.ru'
+	list domain 'happ-proxy.com'
+	list domain 'authentik.tgvpnbot.com'
+
+config host
+	option name 'PS5'
+	list mac '00:E4:21:57:25:05'
+	option ip '192.168.11.226'
+	option leasetime 'infinite'
+
+config host
+	option name 'SamsungTV'
+	list mac 'FC:03:9F:96:76:4C'
+	option ip '192.168.11.132'
+	option leasetime 'infinite'
+
+config host
+	option name 'NixOS'
+	list mac '20:25:64:3B:5B:EA'
+	option ip '192.168.11.193'
+	option leasetime 'infinite'
+
+config host
+	option name 'SteamDeck'
+	list mac '0C:58:7B:80:2F:6C'
+	option ip '192.168.11.116'
+	option leasetime 'infinite'
+

@@ -1,0 +1,70 @@
+config rule
+        option name 'WhatsApp Voice'
+        option src 'lan'
+        option dest '*'
+        option proto 'udp'
+        option set_mark '0x1'
+        option target 'MARK'
+        option family 'ipv4'
+        option dest_port '3478 3479'
+
+config rule
+        option name 'Telegram VPN'
+        option src 'lan'
+        option dest '*'
+        option proto 'all'
+        option set_mark '0x1'
+        option target 'MARK'
+        option family 'ipv4'
+        option dest_ip '91.108.8.0/22 91.108.16.0/22 91.108.12.0/22 149.154.160.0/20 91.105.192.0/23 91.108.20.0/22 185.76.151.0/24'
+
+config rule
+        option name 'VoIP'
+        option src 'lan'
+        option dest '*'
+        option proto 'udp'
+        option set_mark '0x1'
+        option target 'MARK'
+        option family 'ipv4'
+        option dest_port '5060 5061'
+
+config rule
+	option name 'PS5_full_vpn'
+	option src 'lan'
+	option dest '*'
+	option proto 'all'
+        option set_mark '0x1'
+        option target 'MARK'
+        option family 'ipv4'
+	option src_ip '196.168.11.226'
+
+config rule
+	option name 'SteamDeck_full_vpn'
+	option src 'lan'
+	option dest '*'
+	option proto 'all'
+        option set_mark '0x1'
+        option target 'MARK'
+        option family 'ipv4'
+	option src_ip '196.168.11.116'
+
+
+config rule
+	option name 'Samsung_full_vpn'
+	option src 'lan'
+	option dest '*'
+	option proto 'all'
+	option set_mark '0x1'
+	option target 'MARK'
+	option family 'ipv4'
+	option src_ip '192.168.11.132'
+
+config rule
+	option name 'NixOS_full_vpn'
+	option src 'lan'
+	option dest '*'
+	option proto 'all'
+	option set_mark '0x1'
+	option target 'MARK'
+	option family 'ipv4'
+	option src_ip '192.168.11.193'
