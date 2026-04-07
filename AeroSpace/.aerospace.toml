@@ -65,9 +65,10 @@ automatically-unhide-macos-hidden-apps = true
     alt-f = 'fullscreen'
     alt-shift-f = 'macos-native-fullscreen'
     # alt-shift-enter = 'exec-and-forget open -n /Volumes/Macintosh\ HD/Applications/Alacritty.app'
+    # alt-shift-enter = 'exec-and-forget open -n /Volumes/Macintosh\ HD/System/Applications/Utilities/Terminal.app'
+    alt-shift-enter = 'exec-and-forget open -n /Volumes/Macintosh\ HD/Applications/Ghostty.app'
     alt-shift-q = 'exec-and-forget shortcuts run "Create Note"'
     alt-shift-o = 'exec-and-forget shortcuts run "Search Notes"'
-    alt-shift-enter = 'exec-and-forget open -n /Volumes/Macintosh\ HD/System/Applications/Utilities/Terminal.app'
     alt-cmd-f = 'layout floating tiling'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
@@ -211,7 +212,7 @@ run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
-run = ['move-node-to-workspace 4']
+run = ['layout floating']
 
 [[on-window-detected]]
 if.app-id = 'Mattermost.Desktop'
