@@ -5,6 +5,7 @@ mouse-hide-while-typing = true
 env=TERM=xterm-256color
 link-url = true
 macos-option-as-alt = true
+confirm-close-surface = false
 
 # Font
 font-family = Liga SFMono Nerd Font
