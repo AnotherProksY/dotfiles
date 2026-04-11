@@ -3,8 +3,9 @@
 
 return {
   "nvim-treesitter/nvim-treesitter",
-  build = ":TSUpdate",
   branch = "main",
+  lazy = false,
+  build = ":TSUpdate",
   -- main = "nvim-treesitter.configs", -- Sets main module to use for opts
   -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
   opts = {
