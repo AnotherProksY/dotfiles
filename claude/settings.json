@@ -3,6 +3,21 @@
     "code-review@claude-plugins-official": true,
     "frontend-design@claude-plugins-official": true
   },
+  "permissions": {
+    "allow": [
+      "Bash(grep *)",
+      "Bash(grep -*)",
+      "Bash(find *)",
+      "Bash(rg *)",
+      "Bash(fd *)",
+      "Bash(gh pr diff*)",
+      "Bash(gh pr view*)",
+      "Bash(gh pr list*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git show*)"
+    ]
+  },
   "hooks": {
     "Stop": [
       {
