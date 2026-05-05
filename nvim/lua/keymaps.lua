@@ -4,6 +4,11 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- Restart NeoVim
+vim.keymap.set("n", "<leader>re", "<cmd>restart<cr>", {
+  desc = "Restart NeoVim (:restart)",
+})
+
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
