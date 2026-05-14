@@ -25,7 +25,7 @@ brew install --formula tree git htop btop tmux ctags fzf bat telnet httpie mosh 
 Casks:
 
 ```bash
-brew install --casks tableplus telegram discord docker docker-desktop boop maccy the-unarchiver httpie font-sf-mono-nerd-font-ligaturized google-chrome nikitabobko/tap/aerospace ngrok bitwarden bettermouse cursor claude-code little-snitch termius ghostty raycast
+brew install --casks tableplus telegram discord docker docker-desktop boop maccy the-unarchiver httpie font-sf-mono-nerd-font-ligaturized google-chrome nikitabobko/tap/aerospace ngrok bitwarden bettermouse cursor claude-code little-snitch termius ghostty raycast obsidian
 ```
 
 ## Другие программы
