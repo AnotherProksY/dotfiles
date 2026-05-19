@@ -18,9 +18,9 @@ require "autocommands"
 -- [[ Configure and install plugins ]]
 
 require("lazy").setup({
-  { import = "plugins" },
   { import = "plugins.LSP" },
   { import = "plugins.helpers" },
+  { import = "plugins.navigation" },
   { import = "plugins.themes" },
 }, {
   ui = {
