@@ -15,9 +15,6 @@ vim.opt.relativenumber = true
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = "a"
 
--- Don't show the mode, since it's already in the status line
-vim.opt.showmode = false
-
 -- Sync clipboard between OS and Neovim.
 --  Schedule the setting after `UiEnter` because it can increase startup-time.
 --  Remove this option if you want your OS clipboard to remain independent.
@@ -68,3 +65,10 @@ vim.opt.expandtab = true
 -- Map Russian symbols to English
 vim.opt.langmap =
   "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz"
+
+-- NetRw settings
+vim.g.netrw_liststyle = 3 -- Tree style
+vim.g.netrw_showhide = 1 -- Show hidden files
+vim.g.netrw_browse_split = 4 -- Open files in previous window
+vim.g.netrw_winsize = 25 -- Win size width 25
+vim.g.netrw_altv = 1 -- Open Vsplit right

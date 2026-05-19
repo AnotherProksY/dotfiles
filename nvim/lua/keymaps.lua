@@ -57,3 +57,6 @@ vim.keymap.set("n", "<C-h>", "<Cmd>NvimTmuxNavigateLeft<CR>", { desc = "Move foc
 vim.keymap.set("n", "<C-j>", "<Cmd>NvimTmuxNavigateDown<CR>", { desc = "Move focus to the right window", silent = true })
 vim.keymap.set("n", "<C-k>", "<Cmd>NvimTmuxNavigateUp<CR>", { desc = "Move focus to the lower window", silent = true })
 vim.keymap.set("n", "<C-l>", "<Cmd>NvimTmuxNavigateRight<CR>", { desc = "Move focus to the upper window", silent = true })
+
+-- Open Exporer (Netrw) on left side
+vim.keymap.set("n", "\\", "<cmd>Lexplore<CR>", { desc = "Open Exporer (Netrw) on left side" })

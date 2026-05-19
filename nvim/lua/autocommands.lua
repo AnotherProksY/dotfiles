@@ -64,8 +64,6 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 
 local function md_mode()
   vim.opt.laststatus = 0 -- Markdown: hide statusline
-  vim.opt.showmode = true
-  vim.b.ministatusline_disable = true
   vim.opt.signcolumn = "no"
   vim.opt.number = false
   vim.opt.relativenumber = false
@@ -73,8 +71,6 @@ end
 
 local function normal_mode()
   vim.opt.laststatus = 2
-  vim.opt.showmode = false
-  vim.b.ministatusline_disable = false
   vim.opt.signcolumn = "yes"
   vim.opt.number = true
   vim.opt.relativenumber = true
