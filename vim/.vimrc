@@ -93,7 +93,6 @@ set splitbelow splitright
 " Autocomplete
 set wildmenu
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
-set path+=**
 set omnifunc=syntaxcomplete#Complete
 set completeopt=menu,menuone,noinsert,noselect
 filetype on
