@@ -1,6 +1,6 @@
 -- [[ Basic Autocommands ]]
 
--- Highlight when yanking (copying) text
+---- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
 --  See `:help vim.highlight.on_yank()`
 vim.api.nvim_create_autocmd("TextYankPost", {
@@ -11,11 +11,33 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   end,
 })
 
--- Настройки для Markdown файлов
+---- auto resize splits when the terminal's window is resized
+vim.api.nvim_create_autocmd("VimResized", {
+  command = "wincmd =",
+})
+
+---- no auto continue comments on new line
+vim.api.nvim_create_autocmd("FileType", {
+  group = vim.api.nvim_create_augroup("no_auto_comment", {}),
+  callback = function()
+    vim.opt_local.formatoptions:remove { "c", "r", "o" }
+  end,
+})
+
+---- syntax highlighting for dotenv files
+vim.api.nvim_create_autocmd("BufRead", {
+  group = vim.api.nvim_create_augroup("dotenv_ft", { clear = true }),
+  pattern = { ".env", ".env.*" },
+  callback = function()
+    vim.bo.filetype = "dosini"
+  end,
+})
+
+---- Settings for Markdown files
 local md_group = vim.api.nvim_create_augroup("MarkdownMode", { clear = true })
 
--- Сохраняем birthtime ДО записи для md‑файлов
-vim.api.nvim_create_autocmd("BufWritePre", { -- ДО записи!
+-- Save birthtime BEFORE saving *.md
+vim.api.nvim_create_autocmd("BufWritePre", { -- BEFORE saving!
   pattern = "*.md",
   group = md_group,
   callback = function(ev)
@@ -27,7 +49,7 @@ vim.api.nvim_create_autocmd("BufWritePre", { -- ДО записи!
   end,
 })
 
--- Применяем birthtime ПОСЛЕ записи для md‑файлов
+-- Load birthtime AFTER saving *.md
 vim.api.nvim_create_autocmd("BufWritePost", {
   pattern = "*.md",
   group = md_group,
@@ -41,7 +63,7 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 })
 
 local function md_mode()
-  vim.opt.laststatus = 0 -- Markdown: скрыть statusline
+  vim.opt.laststatus = 0 -- Markdown: hide statusline
   vim.opt.showmode = true
   vim.b.ministatusline_disable = true
   vim.opt.signcolumn = "no"
@@ -58,7 +80,7 @@ local function normal_mode()
   vim.opt.relativenumber = true
 end
 
--- Убрать mini.statusline если открыт файл MD
+-- Remove mini.statusline if opens *.md
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "markdown",
   group = md_group,
@@ -70,11 +92,11 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.api.nvim_create_autocmd({ "BufEnter", "WinEnter" }, {
   pattern = "*.md",
   group = md_group,
-  callback = md_mode, -- Включить md-режим при фокусе
+  callback = md_mode, -- Load md-mode on buffer focus
 })
 
 vim.api.nvim_create_autocmd({ "BufLeave", "WinLeave" }, {
   pattern = "*.md",
   group = md_group,
-  callback = normal_mode, -- Выключить при уходе фокуса
+  callback = normal_mode, -- Disable md-mode on buffer unfocus
 })
