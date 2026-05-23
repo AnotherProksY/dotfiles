@@ -1,13 +1,13 @@
 {
   "inbounds": [
     {
-      "auto_route": false,
-      "domain_strategy": "ipv4_only",
-      "inet4_address": "172.16.250.1/30",
+      "type": "tun",
       "interface_name": "tun0",
-      "sniff": true,
+      "domain_strategy": "ipv4_only",
+      "address": ["172.16.250.1/30"],
+      "auto_route": false,
       "strict_route": false,
-      "type": "tun"
+      "sniff": true
     }
   ],
   "log": {
@@ -18,24 +18,47 @@
       "domain_strategy": "",
       "flow": "xtls-rprx-vision",
       "packet_encoding": "",
-      "server": "router-2.tgvpnbot.com",
+      "server": "vpn-8.tgvpnbot.com",
       "server_port": 443,
       "tag": "Kamil-Router",
       "tls": {
         "enabled": true,
         "reality": {
           "enabled": true,
-          "public_key": "iHwjVTDKubEaWDQjOTtjJWemHRiTk1c0OQnltidMTzU",
-          "short_id": "b69325fe35"
+          "public_key": "...",
+          "short_id": "..."
         },
-        "server_name": "selectel.ru",
+        "server_name": "dev.memfis.me",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
       },
       "type": "vless",
-      "uuid": "8c25c2f7-fe8b-4a25-81cf-4ff401d9cc00"
+      "uuid": "..."
+    },
+    {
+      "domain_strategy": "",
+      "flow": "xtls-rprx-vision",
+      "packet_encoding": "",
+      "server": "router-fi-1.tgvpnbot.com",
+      "server_port": 443,
+      "tag": "finland",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "...",
+          "short_id": "..."
+        },
+        "server_name": "router-fi-1.tgvpnbot.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "type": "vless",
+      "uuid": "..."
     },
     {
       "tag": "direct",
@@ -53,5 +76,14 @@
       "tag": "dns-out",
       "type": "dns"
     }
-  ]
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "rules": [
+      {
+        "source_ip_cidr": ["192.168.11.116/32"],
+        "outbound": "finland"
+      }
+    ]
+  }
 }
