@@ -177,7 +177,16 @@ return {
     local servers = {
       -- clangd = {},
       -- gopls = {},
-      pyright = {},
+      pyright = {
+        settings = {
+          python = {
+            analysis = {
+              diagnosticMode = "openFilesOnly",
+              exclude = { "**/.venv", "**/venv", "**/node_modules", "**/__pycache__" },
+            },
+          },
+        },
+      },
       dockerls = {},
       docker_compose_language_service = {},
       html = {},

@@ -3,6 +3,11 @@
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
+-- Skip Python3 host-provider auto-detection (has('python3') in the bundled
+-- ftplugin/python.vim triggers this on every .py file open); no installed
+-- plugin uses the python3 RPC host.
+vim.g.loaded_python3_provider = 0
+
 -- Terminal true colors
 vim.opt.termguicolors = true
 
